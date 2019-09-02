@@ -1,0 +1,25 @@
+.slide {
+    text-align: center;
+    line-height: 500px;
+    height: 500px;
+}
+
+.pure-menu-link {
+    height: 45px;
+    font-size: 18px;
+    line-height: 45px;
+}
+
+.language-icon {
+    height: 25px;
+    width: 25px;
+    margin-bottom: -7px;
+}
+
+.pure-menu-list {
+    float: right;
+}
+
+.pure-menu-disabled {
+    pointer-events: none;
+}
