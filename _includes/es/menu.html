@@ -1,32 +1,122 @@
-<div class="pure-menu pure-menu-horizontal">
-    <a href="/es/index.html" class="pure-menu-heading pure-menu-link">PADMAWORLD</a>
-    <ul class="pure-menu-list">
-        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover{%
-            if page.this_page == 'ashtanga/about' or
-               page.this_page == 'ashtanga/instructors' or
-               page.this_page == 'ashtanga/timetable' or
-               page.this_page == 'ashtanga/location' or
-               page.this_page == 'ashtanga/prices' or
-               page.this_page == 'ashtanga/etiquette'
-        %} pure-menu-selected{% endif %}">
-            <a href="#" class="pure-menu-link">Clases de ashtanga</a>
-            <ul class="pure-menu-children">
-                <li class="pure-menu-item"><a href="/es/ashtanga/about.html" class="pure-menu-link">Sobre ashtanga</a></li>
-                <li class="pure-menu-item"><a href="/es/ashtanga/instructors.html" class="pure-menu-link">Instructores</a></li>
-                <li class="pure-menu-item"><a href="/es/ashtanga/timetable.html" class="pure-menu-link">Horarios</a></li>
-                <li class="pure-menu-item"><a href="/es/ashtanga/location.html" class="pure-menu-link">Local</a></li>
-                <li class="pure-menu-item"><a href="/es/ashtanga/prices.html" class="pure-menu-link">Precios</a></li>
-                <li class="pure-menu-item"><a href="/es/ashtanga/etiquette.html" class="pure-menu-link">Etiqueta</a></li>
-            </ul>
-        </li>
-        <li class="pure-menu-item{% if page.this_page == 'events' %} pure-menu-selected{% endif %}"><a class="pure-menu-link" href="/es/events.html">Eventos</a></li>
-        <li class="pure-menu-item{% if page.this_page == 'contact' %} pure-menu-selected{% endif %}"><a class="pure-menu-link" href="/es/contact.html">Contacto</a></li>
-        <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-            <a href="#" class="pure-menu-link"><img class="language-icon" src="/assets/images/icon128px-exported-black.png"/> Idioma</a>
-            <ul class="pure-menu-children">
-                <li class="pure-menu-item"><a href="/en/{{ page.this_page }}.html" class="pure-menu-link">EN/English</a></li>
-                <li class="pure-menu-item"><a href="#" class="pure-menu-link pure-menu-disabled">ES/Español</a></li>
-            </ul>
-        </li>
-    </ul>
+<div class="desktop menu">
+    <div class="pure-menu pure-menu-horizontal">
+        <a href="/es/index.html" class="pure-menu-heading pure-menu-link">
+            <div class="logo-text">
+                <span class="logo-big">ASHTANGA</span><br>PADMAWORLD
+            </div>
+        </a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover{%
+                if page.this_page == 'ashtanga/about' or
+                page.this_page == 'ashtanga/instructors' or
+                page.this_page == 'ashtanga/timetable' or
+                page.this_page == 'ashtanga/location' or
+                page.this_page == 'ashtanga/prices' or
+                page.this_page == 'ashtanga/etiquette'
+                %} pure-menu-selected{% endif %}">
+                <a href="#" class="pure-menu-link">Clases de ashtanga</a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/about.html" class="pure-menu-link">Sobre ashtanga</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/instructors.html" class="pure-menu-link">Instructores</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/timetable.html" class="pure-menu-link">Horarios</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/location.html" class="pure-menu-link">Local</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/prices.html" class="pure-menu-link">Precios</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/etiquette.html" class="pure-menu-link">Etiqueta</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="pure-menu-item{% if page.this_page == 'events' %} pure-menu-selected{% endif %}">
+                <a class="pure-menu-link" href="/es/events.html">Eventos</a>
+            </li>
+            <li class="pure-menu-item{% if page.this_page == 'contact' %} pure-menu-selected{% endif %}">
+                <a class="pure-menu-link" href="/es/contact.html">Contacto</a>
+            </li>
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover language-dropdown">
+                <a href="#" class="pure-menu-link">
+                    <img class="language-icon" src="/assets/images/icon128px-exported-black.png"/> Idioma
+                </a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item">
+                        <a href="/en/{{ page.this_page }}.html" class="pure-menu-link" onclick="setLanguageCookie('en')">
+                            en - English
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link pure-menu-disabled">
+                            es - Español
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="mobile menu">
+    <div class="pure-menu pure-menu-horizontal">
+        <a href="/es/index.html" class="pure-menu-heading pure-menu-link">
+            <div class="logo-text">
+                <span class="logo-big">ASHTANGA</span><br>PADMAWORLD
+            </div>
+        </a>
+        <ul class="pure-menu-list">
+            <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                <a href="#" class="pure-menu-link">
+                    <img class="language-icon" src="/assets/images/hamburger.png"/>
+                </a>
+                <ul class="pure-menu-children">
+                    <li class="pure-menu-item pure-menu-disabled">
+                        Clases de ashtanga
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/about.html" class="pure-menu-link indented">Sobre ashtanga</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/instructors.html" class="pure-menu-link indented">Instructores</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/timetable.html" class="pure-menu-link indented">Horarios</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/location.html" class="pure-menu-link indented">Local</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/prices.html" class="pure-menu-link indented">Precios</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/es/ashtanga/etiquette.html" class="pure-menu-link indented">Etiqueta</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="/es/events.html">Eventos</a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a class="pure-menu-link" href="/es/contact.html">Contacto</a>
+                    </li>
+                    <li class="pure-menu-item pure-menu-disabled">
+                        <img class="language-icon" src="/assets/images/icon128px-exported-black.png"/> Idioma
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="/en/{{ page.this_page }}.html" class="pure-menu-link indented" onclick="setLanguageCookie('en')">
+                            en - English
+                        </a>
+                    </li>
+                    <li class="pure-menu-item">
+                        <a href="#" class="pure-menu-link pure-menu-disabled indented">
+                            es - Español
+                        </a>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
 </div>
