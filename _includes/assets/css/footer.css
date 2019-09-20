@@ -1,0 +1,57 @@
+
+/*** Style for desktop ********************************************************/
+
+footer {
+    background-color: #876;
+    width: 100%;
+}
+
+footer .centered-container {
+    height: 80px;
+    margin-top: auto;
+    padding: 24px 0;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer ul {
+    padding-left: 16px;
+    list-style-type: none;
+}
+
+footer li {
+    margin: 12px 0;
+}
+
+footer .copyright-notice {
+    line-height: 120px;
+    font-size: 12px;
+    float: right;
+    margin-right: 16px;
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1040px) and (min-width: 720px) {
+
+    footer .centered-container {
+        width: 100%;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    footer .centered-container {
+        width: 100%;
+    }
+
+}

@@ -1,0 +1,95 @@
+
+/*** Style for desktop ********************************************************/
+
+.slide {
+    height: 480px;
+    background-position: center;
+    background-size: auto 120%;
+}
+
+.slide-text {
+    padding-top: 120px;
+    width: 560px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    color: #fff;
+}
+
+.slide-text h1 {
+    font-size: 48px;
+    margin-bottom: 3px;
+}
+
+.slide-text h2 {
+    margin-top: 3px;
+    margin-bottom: 16px;
+    font-size: 24px;
+}
+
+.slide-text .pure-button {
+    color: #777;
+    font-weight: bold;
+    background: #fff;
+    font-size: 18px;
+}
+
+.slide-text .pure-button:hover {
+    color: #aaa;
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1040px) and (min-width: 720px) {
+
+    .slide {
+        height: 400px;
+    }
+
+    .slide-text {
+        padding-top: 90px;
+        width: 480px;
+    }
+
+    .slide-text h1 {
+        font-size: 40px;
+    }
+
+    .slide-text h2 {
+        font-size: 20px;
+    }
+
+    .slide-text .pure-button {
+        font-size: 16px;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    .slide {
+        height: 300px;
+    }
+
+    .slide-text {
+        padding-top: 60px;
+        width: 90%;
+    }
+
+    .slide-text h1 {
+        font-size: 30px;
+    }
+
+    .slide-text h2 {
+        font-size: 16px;
+    }
+
+    .slide-text .pure-button {
+        font-size: 16px;
+    }
+
+}

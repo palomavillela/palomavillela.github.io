@@ -1,108 +1,147 @@
+---
+---
 
-body {
-    font-size: 100%;
-}
-h1, .menu {
+/* MAIN */
+h1, .menu, footer a, .pure-g [class *= "pure-u"] h1 {
     font-family: 'Vollkorn', serif !important;
 }
-p {
-    font-family: 'Lato', sans-serif !important;
+p, .pure-g [class *= "pure-u"] {
+    /* font-family: 'Lato', sans-serif !important; */
+    font-family: 'Vollkorn', serif !important;
+}
+body {
+    font-size: 16px;
+    /* background-color: #fff; */
+    /* background-color: #945; */
+    background-color: #768;
+    font-family: 'Vollkorn', serif !important;
 }
 
-.slide {
-    height: 30em;
+
+/*** MENU *********************************************************************/
+
+{% include /assets/css/menu.css %}
+{% include /assets/css/footer.css %}
+{% include /assets/css/caroussel.css %}
+
+
+/*** END OF MENU **************************************************************/
+
+
+/* CALENDAR */
+.calendar {
+    width: 1040px;
 }
 
-.menu {
+
+/* CAPTION */
+.caption {
+    background-color: #885;
+    height: 9em;
+    margin-bottom: 2em;
+    padding-top: 4em;
+}
+.caption-text {
+    color: #fff;
+    width: 35em;
+    text-align: center;
+}
+
+
+/* BASIC ELEMENTS */
+.centered-container {
     width: 65em;
     margin-left: auto;
     margin-right: auto;
 }
-
-.menu .pure-menu-link {
-    height: 3em;
-    line-height: 3em;
-    font-family: 'Vollkorn', serif !important;
+#intro {
+    /* background-color: #945; */
+    background-color: #768;
 }
-
-.desktop {
-    display: inherit;
+#quote {
+    background-color: #687;
+    padding-top: 2em;
+    text-align: center;
 }
-.mobile {
-    display: none;
+#intro h2, #quote h2 {
+    margin-left: 0.8em;
+    font-size: 1.3em;
+    color: #eee;
+    margin-top: 1em;
+    margin-bottom: 2em;
 }
-.mobile .pure-menu-link::after {
-    display: none;
+#intro .centered-container, #quote .centered-container {
+    width: 65em;
 }
-.mobile .pure-menu-children {
-    position: fixed !important;
-    left: 0;
-    width: 100%;
-    padding-bottom: 50em;
-}
-.mobile .pure-menu-children .pure-menu-link {
-    line-height: 1em !important;
-    height: 1em !important;
-}
-.mobile .pure-menu-item .indented {
-    margin-left: 2em;
-}
-.mobile .pure-menu-item .pure-menu-disabled {
-    color: #666;
-}
-
-.logo-text {
-    margin-top: 0.6em;
-    line-height: 1em;
-}
-.logo-text .logo-big {
-    font-size: 1.35em;
+.clear-block-button {
+    background: #999;
+    color: #fff;
     font-weight: bold;
-    color: #888;
+    margin-left: 2.25em;
+    margin-bottom: 1em;
+}
+.clear-block-button:hover {
+    background: #bbb;
+}
+.clear-block {
+    background-color: #fff;
+    padding: 2em 0;
+}
+.full-width {
+    width: 65em;
+}
+.clear-block img {
+    width: 100%;
+}
+.clear-block p {
+    margin-left: 1.5em;
+    font-size: 1.4em;
+}
+.colored-block {
+    background-color: #687;
+    color: #fff;
+}
+.colored-block-button {
+    background: #fff;
+    color: #777;
+    font-weight: bold;
+    margin-left: 2.25em;
+    margin-bottom: 1em;
+}
+.colored-block-button:hover {
+    color: #aaa;
+    background: #fff;
 }
 
-.menu .pure-menu-children .pure-menu-link {
-    height: 2em;
-    line-height: 2em;
-}
 
-.menu .language-icon {
-    height: 1.5em;
-    width: 1.5em;
-    margin-bottom: -0.4em;
-}
+/* MEDIA QUERIES */
+/* @media screen and (max-width: 65em, min-width: 45em) {
 
-.menu .pure-menu-list {
-    float: right;
-}
-
-.menu .pure-menu-disabled {
-    pointer-events: none;
-}
-
-@media screen and (max-width: 65em) {
-
-    .menu {
-        width: 100%;
+    .caption {
+        height: 8em;
+        margin-bottom: 1.5em;
+        padding-top: 3em;
+    }
+    .caption-text {
+        width: 30em;
     }
 
-    .slide {
-        height: 25em;
-    }
-
 }
 
-@media screen and (max-width: 45em) {
+@media screen and (max-width: 44.99em) {
 
-    .slide {
-        height: 20em;
+    .caption {
+        height: 7em;
+        margin-bottom: 1em;
+        padding-top: 2em;
+    }
+    .caption-text {
+        width: 25em;
     }
 
-    .desktop {
-        display: none;
-    }
-    .mobile {
-        display: inherit;
-    }
+} */
 
+/* PATCHES */
+.pure-g {
+    letter-spacing: normal;
 }

@@ -1,0 +1,165 @@
+<div class="menu">
+    <div class="desktop centered-container">
+        <div class="pure-menu pure-menu-horizontal">
+            <a href="/{{ include.language }}/index.html" class="pure-menu-heading pure-menu-link">
+                <div class="logo-text">
+                    <span class="logo-big">ASHTANGA</span><br>PADMAWORLD
+                </div>
+            </a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover{%
+                    if include.this_page == 'ashtanga/about' or
+                    include.this_page == 'ashtanga/instructors' or
+                    include.this_page == 'ashtanga/timetable' or
+                    include.this_page == 'ashtanga/location' or
+                    include.this_page == 'ashtanga/prices' or
+                    include.this_page == 'ashtanga/etiquette'
+                    %} pure-menu-selected{% endif %}">
+                    <a href="#" class="pure-menu-link">{{ include.text_ashtanga_classes }}</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/about.html" class="pure-menu-link">
+                                {{ include.text_about_ashtanga }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/instructors.html" class="pure-menu-link">
+                                {{ include.text_instructors }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/timetable.html" class="pure-menu-link">
+                                {{ include.text_timetable }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/location.html" class="pure-menu-link">
+                                {{ include.text_location }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/prices.html" class="pure-menu-link">
+                                {{ include.text_prices }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/etiquette.html" class="pure-menu-link">
+                                {{ include.text_etiquette }}
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="pure-menu-item{% if include.this_page == 'events' %} pure-menu-selected{% endif %}">
+                    <a class="pure-menu-link" href="/{{ include.language }}/events/index.html">
+                        {{ include.text_events }}
+                    </a>
+                </li>
+                <li class="pure-menu-item{% if include.this_page == 'contact' %} pure-menu-selected{% endif %}">
+                    <a class="pure-menu-link" href="/{{ include.language }}/contact.html">
+                        {{ include.text_contact }}
+                    </a>
+                </li>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover language-dropdown">
+                    <a href="#" class="pure-menu-link">
+                        <img class="language-icon" src="/assets/images/icon128px-exported-black.png"/> {{ include.text_language }}
+                    </a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="{% if include.language == 'en' %}#{% else %}/en/{{ include.this_page }}.html{% endif %}"
+                               class="pure-menu-link{% if include.language == 'en' %} pure-menu-disabled{% endif %}"
+                               onclick="setLanguageCookie('en')">
+                                en - English
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="{% if include.language == 'es' %}#{% else %}/es/{{ include.this_page }}.html{% endif %}"
+                               class="pure-menu-link{% if include.language == 'es' %} pure-menu-disabled{% endif %}"
+                               onclick="setLanguageCookie('es')">
+                                es - Español
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mobile centered-container">
+        <div class="pure-menu pure-menu-horizontal">
+            <a href="/{{ include.language }}/index.html" class="pure-menu-heading pure-menu-link">
+                <div class="logo-text">
+                    <span class="logo-big">ASHTANGA</span><br>PADMAWORLD
+                </div>
+            </a>
+            <ul class="pure-menu-list">
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" class="pure-menu-link">
+                        <img class="hamburger-icon" src="/assets/images/hamburger.png"/>
+                    </a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item pure-menu-disabled">
+                            {{ include.text_ashtanga_classes }}
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/about.html" class="pure-menu-link indented">
+                                {{ include.text_about_ashtanga }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/instructors.html" class="pure-menu-link indented">
+                                {{ include.text_instructors }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/timetable.html" class="pure-menu-link indented">
+                                {{ include.text_timetable }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/location.html" class="pure-menu-link indented">
+                                {{ include.text_location }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/prices.html" class="pure-menu-link indented">
+                                {{ include.text_prices }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/ashtanga/etiquette.html" class="pure-menu-link indented">
+                                {{ include.text_etiquette }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="/{{ include.language }}/events/index.html">
+                                {{ include.text_events }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link" href="/{{ include.language }}/contact.html">
+                                {{ include.text_contact }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item pure-menu-disabled">
+                            <img class="language-icon" src="/assets/images/icon128px-exported-black.png"/> {{ include.text_language }}
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="{% if include.language == 'en' %}#{% else %}/en/{{ include.this_page }}.html{% endif %}"
+                               class="pure-menu-link indented{% if include.language == 'en' %} pure-menu-disabled{% endif %}"
+                               onclick="setLanguageCookie('en')">
+                                en - English
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="{% if include.language == 'es' %}#{% else %}/es/{{ include.this_page }}.html{% endif %}"
+                               class="pure-menu-link indented{% if include.language == 'es' %} pure-menu-disabled{% endif %}"
+                               onclick="setLanguageCookie('es')">
+                                es - Español
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div id="menu-spacer"></div>

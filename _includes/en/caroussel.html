@@ -1,5 +1,20 @@
 <div class="slider">
-    <div class="slide" style="background-color:red"><h3>Come practice</h3></div>
-    <div class="slide" style="background-color:green"><h3>Attend our workshops</h3></div>
-    <div class="slide" style="background-color:blue"><h3>Find yourself</h3></div>
+    {%
+        include /slide.html
+        background_image = "/assets/images/yoga_statue.jpg"
+        link = "/en/ashtanga/timetable.html"
+
+        text_title = "Ashtanga classes"
+        text_subtitle = "Cultivate your ashtanga yoga practice Monday to Friday in Binissalem, Mallorca."
+        text_button = "Check the timetable"
+    %}
+    {%
+        include /slide.html
+        background_image = "/assets/images/mats.jpg"
+        link = "/en/events/autopractice.html"
+
+        text_title = "Auto-practice day"
+        text_subtitle = "Bring your yoga routine, regardless of style, and practice in group for free."
+        text_button = "Know more"
+    %}
 </div>

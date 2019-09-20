@@ -1,5 +1,20 @@
 <div class="slider">
-    <div class="slide" style="background-color:red"><h3>Ven a practicar</h3></div>
-    <div class="slide" style="background-color:green"><h3>Asiste a nuestros workshops</h3></div>
-    <div class="slide" style="background-color:blue"><h3>Encuéntrate a ti mismo</h3></div>
+    {%
+        include /slide.html
+        background_image = "/assets/images/yoga_statue.jpg"
+        link = "/es/ashtanga/timetable.html"
+
+        text_title = "Clases de ashtanga"
+        text_subtitle = "Cultiva tu práctica de ashtanga yoga de lunes a viernes en Binissalem, Mallorca."
+        text_button = "Comprueba los horarios"
+    %}
+    {%
+        include /slide.html
+        background_image = "/assets/images/mats.jpg"
+        link = "/es/events/autopractice.html"
+
+        text_title = "Dia de auto-práctica"
+        text_subtitle = "Trae tu rutina de yoga, sea cual sea tu estilo, y practica en grupo de forma gratuita."
+        text_button = "Lee más"
+    %}
 </div>
