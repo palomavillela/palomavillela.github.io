@@ -1,0 +1,109 @@
+
+/*** Style for desktop ********************************************************/
+
+.wide-container {
+    width: 100%;
+}
+
+.centered-container {
+    width: 1040px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#welcome-block {
+    background-color: #768;
+}
+
+#welcome-block h2 {
+    margin: 48px 16px;
+    font-size: 24px;
+    color: #eee;
+    font-weight: normal;
+}
+
+.text-over-image-block {
+    background-position: left;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+}
+
+.text-over-image-block .wide-container {
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff, #fff);
+}
+
+.text-over-image-block p {
+    color: #333;
+    padding: 16px;
+    font-size: 20px;
+}
+
+.text-over-image-block .buttons {
+    padding-left: 16px;
+    margin-bottom: 32px;
+}
+
+.clear-block-button {
+    background: #999;
+    color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.clear-block-button:hover {
+    background: #bbb;
+}
+
+/* when purecss grid blocks change layout */
+@media screen and (max-width: 768px) {
+
+    .text-over-image-block .wide-container {
+        background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.85), #fff, #fff);
+    }
+
+    .text-over-image-block p {
+        margin-top: 80px;
+        font-size: 18px;
+    }
+
+    .text-over-image-block .buttons {
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clear-block-button {
+        font-size: 14px;
+    }
+
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1040px) and (min-width: 720px) {
+
+    .centered-container {
+        width: 100%;
+    }
+
+    #welcome-block h2 {
+        font-size: 20px;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    .centered-container {
+        width: 100%;
+    }
+
+    #welcome-block h2 {
+        font-size: 16px;
+    }
+
+}

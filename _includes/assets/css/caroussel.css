@@ -2,9 +2,15 @@
 /*** Style for desktop ********************************************************/
 
 .slide {
-    height: 480px;
     background-position: center;
-    background-size: auto 120%;
+    background-size: 100% auto;
+    height: 480px;
+}
+
+@media screen and (max-width: 1300px) {
+    .slide {
+        background-size: auto 100%;
+    }
 }
 
 .slide-text {

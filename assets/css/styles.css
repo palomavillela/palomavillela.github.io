@@ -1,33 +1,60 @@
 ---
 ---
 
-/* MAIN */
+body {
+    font-size: 16px;
+    background-color: #768;
+    font-family: 'Vollkorn', serif !important;
+}
 h1, .menu, footer a, .pure-g [class *= "pure-u"] h1 {
     font-family: 'Vollkorn', serif !important;
 }
 p, .pure-g [class *= "pure-u"] {
-    /* font-family: 'Lato', sans-serif !important; */
     font-family: 'Vollkorn', serif !important;
 }
-body {
-    font-size: 16px;
-    /* background-color: #fff; */
-    /* background-color: #945; */
-    background-color: #768;
-    font-family: 'Vollkorn', serif !important;
-}
-
-
-/*** MENU *********************************************************************/
 
 {% include /assets/css/menu.css %}
 {% include /assets/css/footer.css %}
 {% include /assets/css/caroussel.css %}
+{% include /assets/css/components.css %}
 
 
-/*** END OF MENU **************************************************************/
 
 
+
+#quote {
+    background-color: #687;
+    padding-top: 2em;
+    text-align: center;
+}
+#quote h2 {
+    margin-left: 0.8em;
+    font-size: 1.3em;
+    color: #eee;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+#quote .centered-container {
+    width: 65em;
+}
+.full-width {
+    width: 65em;
+}
+.colored-block {
+    background-color: #687;
+    color: #fff;
+}
+.colored-block-button {
+    background: #fff;
+    color: #777;
+    font-weight: bold;
+    margin-left: 2.25em;
+    margin-bottom: 1em;
+}
+.colored-block-button:hover {
+    color: #aaa;
+    background: #fff;
+}
 /* CALENDAR */
 .calendar {
     width: 1040px;
@@ -45,72 +72,6 @@ body {
     color: #fff;
     width: 35em;
     text-align: center;
-}
-
-
-/* BASIC ELEMENTS */
-.centered-container {
-    width: 65em;
-    margin-left: auto;
-    margin-right: auto;
-}
-#intro {
-    /* background-color: #945; */
-    background-color: #768;
-}
-#quote {
-    background-color: #687;
-    padding-top: 2em;
-    text-align: center;
-}
-#intro h2, #quote h2 {
-    margin-left: 0.8em;
-    font-size: 1.3em;
-    color: #eee;
-    margin-top: 1em;
-    margin-bottom: 2em;
-}
-#intro .centered-container, #quote .centered-container {
-    width: 65em;
-}
-.clear-block-button {
-    background: #999;
-    color: #fff;
-    font-weight: bold;
-    margin-left: 2.25em;
-    margin-bottom: 1em;
-}
-.clear-block-button:hover {
-    background: #bbb;
-}
-.clear-block {
-    background-color: #fff;
-    padding: 2em 0;
-}
-.full-width {
-    width: 65em;
-}
-.clear-block img {
-    width: 100%;
-}
-.clear-block p {
-    margin-left: 1.5em;
-    font-size: 1.4em;
-}
-.colored-block {
-    background-color: #687;
-    color: #fff;
-}
-.colored-block-button {
-    background: #fff;
-    color: #777;
-    font-weight: bold;
-    margin-left: 2.25em;
-    margin-bottom: 1em;
-}
-.colored-block-button:hover {
-    color: #aaa;
-    background: #fff;
 }
 
 
