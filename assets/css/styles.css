@@ -3,7 +3,7 @@
 
 body {
     font-size: 16px;
-    background-color: #768;
+    background-image: linear-gradient(to right, #768, #98a);
     font-family: 'Vollkorn', serif !important;
 }
 h1, .menu, footer a, .pure-g [class *= "pure-u"] h1 {
@@ -16,8 +16,8 @@ p, .pure-g [class *= "pure-u"] {
 {% include /assets/css/menu.css %}
 {% include /assets/css/footer.css %}
 {% include /assets/css/caroussel.css %}
+{% include /assets/css/welcome.css %}
 {% include /assets/css/components.css %}
-
 
 
 
@@ -37,24 +37,7 @@ p, .pure-g [class *= "pure-u"] {
 #quote .centered-container {
     width: 65em;
 }
-.full-width {
-    width: 65em;
-}
-.colored-block {
-    background-color: #687;
-    color: #fff;
-}
-.colored-block-button {
-    background: #fff;
-    color: #777;
-    font-weight: bold;
-    margin-left: 2.25em;
-    margin-bottom: 1em;
-}
-.colored-block-button:hover {
-    color: #aaa;
-    background: #fff;
-}
+
 /* CALENDAR */
 .calendar {
     width: 1040px;

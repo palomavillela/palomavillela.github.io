@@ -7,7 +7,7 @@
     top: 0;
     background-color: #fff;
     z-index: 1000;
-    box-shadow: 0 0 8px #aaa;
+    box-shadow: 0 0 8px rgb(0, 0, 0, 0.3);
     font-family: 'Vollkorn', serif;
 }
 
@@ -20,14 +20,14 @@
 }
 
 .menu .logo-text {
-    margin-top: 10px;
+    margin-top: 20px;
     line-height: 16px;
 }
 
 .menu .logo-big {
     font-size: 21.5px;
     font-weight: bold;
-    color: #888;
+    color: #555;
 }
 
 .menu .pure-menu-list {
@@ -35,8 +35,9 @@
 }
 
 .menu .pure-menu-link {
-    height: 48px;
-    line-height: 48px;
+    height: 64px;
+    line-height: 64px;
+    color: #555;
 }
 
 .menu .pure-menu-children .pure-menu-link {
@@ -89,7 +90,7 @@
 }
 
 .menu .mobile .pure-menu-children .pure-menu-disabled {
-    color: #666;
+    color: #555;
 }
 
 .menu .mobile .pure-menu-list .pure-menu-link::after {

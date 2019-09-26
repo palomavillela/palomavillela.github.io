@@ -11,25 +11,33 @@
     margin-right: auto;
 }
 
-#welcome-block {
-    background-color: #768;
-}
-
-#welcome-block h2 {
-    margin: 48px 16px;
-    font-size: 24px;
-    color: #eee;
-    font-weight: normal;
-}
-
 .text-over-image-block {
-    background-position: left;
-    background-size: auto 100%;
+    background-position: top left;
+    background-size: auto 140%;
     background-repeat: no-repeat;
 }
 
+.text-over-image-block.reverse {
+    background-position: top right;
+}
+
 .text-over-image-block .wide-container {
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), #fff, #fff);
+    background-image: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.4),
+        #fff,
+        #fff);
+    padding: 48px 0;
+}
+
+.text-over-image-block.reverse .wide-container {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.4),
+        #fff,
+        #fff);
 }
 
 .text-over-image-block p {
@@ -44,36 +52,99 @@
 }
 
 .clear-block-button {
-    background: #999;
+    background: #777;
     color: #fff;
     font-weight: bold;
     font-size: 16px;
+    margin: 0 8px 0 0;
 }
 
 .clear-block-button:hover {
-    background: #bbb;
+    background: #999;
 }
 
-/* when purecss grid blocks change layout */
-@media screen and (max-width: 768px) {
+.two-column-colored-block.wide-container {
+    padding: 48px 0 16px 0;
+    background-image: linear-gradient(to right, #687, #8a9);
+}
 
-    .text-over-image-block .wide-container {
-        background-image: linear-gradient(rgba(255, 255, 255, 0.25), rgba(255, 255, 255, 0.85), #fff, #fff);
+.two-column-colored-block p {
+    color: #fff;
+    padding: 16px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.two-column-colored-block img {
+    height: 42px;
+    margin: 0 16px;
+}
+
+.colored-block-button {
+    background: #fff;
+    color: #777;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 4px 0 48px 16px;
+}
+
+.colored-block-button:hover {
+    background: #fff;
+    color: #aaa;
+}
+
+
+/*** When purecss grid blocks change layout at MD *****************************/
+
+@media screen and (max-width: 767.9px) {
+
+    .text-over-image-block  {
+        background-size: 120% auto;
+    }
+
+    .text-over-image-block .wide-container,
+    .text-over-image-block.reverse .wide-container {
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.3),
+            rgba(255, 255, 255, 0.8),
+            #fff,
+            #fff);
     }
 
     .text-over-image-block p {
         margin-top: 80px;
-        font-size: 18px;
     }
 
     .text-over-image-block .buttons {
-        width: 300px;
+        padding-left: 0;
+        width: 308px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .clear-block-button {
         font-size: 14px;
+        margin: 0 4px;
+    }
+
+    .colored-block-button {
+        font-size: 14px;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at SM *****************************/
+
+@media screen and (max-width: 567.9px) {
+
+    .text-over-image-block .wide-container,
+    .text-over-image-block.reverse .wide-container {
+        background-image: linear-gradient(
+            rgba(255, 255, 255, 0.3),
+            #fff,
+            #fff,
+            #fff);
     }
 
 }
@@ -87,10 +158,6 @@
         width: 100%;
     }
 
-    #welcome-block h2 {
-        font-size: 20px;
-    }
-
 }
 
 
@@ -102,8 +169,8 @@
         width: 100%;
     }
 
-    #welcome-block h2 {
-        font-size: 16px;
+    .text-over-image-block .wide-container {
+        padding: 48px 0 20px 0;
     }
 
 }

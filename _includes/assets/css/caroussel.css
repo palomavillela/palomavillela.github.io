@@ -4,7 +4,7 @@
 .slide {
     background-position: center;
     background-size: 100% auto;
-    height: 480px;
+    height: 520px;
 }
 
 @media screen and (max-width: 1300px) {
@@ -28,6 +28,7 @@
 }
 
 .slide-text h2 {
+    text-transform: uppercase;
     margin-top: 3px;
     margin-bottom: 16px;
     font-size: 24px;
@@ -95,7 +96,7 @@
     }
 
     .slide-text .pure-button {
-        font-size: 16px;
+        font-size: 14px;
     }
 
 }
