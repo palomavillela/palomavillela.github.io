@@ -40,7 +40,7 @@ footer .copyright-notice {
 }
 
 footer .logo-text {
-    margin-top: 40px;
+    margin-top: 60px;
     line-height: 16px;
     font-size: 18px;
     float: right;
@@ -73,6 +73,10 @@ footer .logo-big {
 
     footer a {
         font-size: 16px;
+    }
+
+    footer .logo-text {
+        margin-top: 54px;
     }
 
 }

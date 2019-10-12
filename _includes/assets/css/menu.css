@@ -51,9 +51,9 @@
 }
 
 .menu .language-icon, .menu .hamburger-icon {
-    height: 35px;
-    width: 35px;
-    margin-bottom: -10px;
+    height: 25px;
+    width: 25px;
+    margin-bottom: -6px;
 }
 
 #menu-spacer {
