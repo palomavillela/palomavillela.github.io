@@ -3,59 +3,47 @@
 
 #welcome-block {
     background-image: linear-gradient(to right, #768, #98a);
-    padding: 50px 0 70px 0;
+    padding: 90px 0 110px 0;
 }
 
 #welcome-block img {
-    width: 65px;
+    width: 90px;
 }
 
 #welcome-block .icon {
-    width: 65px;
+    width: 90px;
     margin-left: auto;
     margin-right: auto;
 }
 
 #welcome-block h2 {
     margin: 0 16px;
-    font-size: 24px;
+    font-size: 26px;
     color: #fff;
     font-weight: normal;
 }
 
-/*** When purecss grid blocks change layout at SM *****************************/
 
-@media screen and (max-width: 567.9px) {
+/*** When purecss grid blocks change layout at LG *****************************/
+
+@media screen and (max-width: 1151.9px) {
 
     #welcome-block {
-        padding: 20px 0 60px 0;
+        padding: 30px 0 70px 0;
+    }
+
+    #welcome-block img {
+        width: 70px;
     }
 
     #welcome-block .icon {
+        width: 70px;
         margin-bottom: 18px;
     }
 
     #welcome-block h2 {
         text-align: center;
-    }
-
-}
-
-
-/*** Style for tablet *********************************************************/
-
-@media screen and (max-width: 1040px) and (min-width: 720px) {
-
-    #welcome-block h2 {
-        font-size: 20px;
-    }
-
-    #welcome-block img {
-        width: 50px;
-    }
-
-    #welcome-block .icon {
-        width: 50px;
+        font-size: 24px;
     }
 
 }
@@ -65,16 +53,22 @@
 
 @media screen and (max-width: 719px) {
 
+    #welcome-block {
+        padding: 25px 0 50px 0;
+    }
+
     #welcome-block h2 {
+        text-align: center;
         font-size: 18px;
     }
 
     #welcome-block img {
-        width: 38px;
+        width: 40px;
     }
 
     #welcome-block .icon {
-        width: 38px;
+        width: 40px;
+        margin-bottom: 14px;
     }
 
 }

@@ -12,30 +12,32 @@
 }
 
 .text-over-image-block {
-    background-position: top left;
+    background-position: center left;
     background-size: auto 140%;
     background-repeat: no-repeat;
 }
 
 .text-over-image-block.reverse {
-    background-position: top right;
+    background-position: bottom right;
 }
 
 .text-over-image-block .wide-container {
     background-image: linear-gradient(
         to right,
         rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.25),
+        #fff,
         #fff,
         #fff);
-    padding: 48px 0;
+    padding: 68px 0 56px 0;
 }
 
 .text-over-image-block.reverse .wide-container {
     background-image: linear-gradient(
         to left,
         rgba(255, 255, 255, 0),
-        rgba(255, 255, 255, 0.4),
+        rgba(255, 255, 255, 0.25),
+        #fff,
         #fff,
         #fff);
 }
@@ -43,7 +45,8 @@
 .text-over-image-block p {
     color: #333;
     padding: 16px;
-    font-size: 20px;
+    font-size: 22px;
+    margin: 0;
 }
 
 .text-over-image-block .buttons {
@@ -55,8 +58,8 @@
     background: #777;
     color: #fff;
     font-weight: bold;
-    font-size: 16px;
-    margin: 0 8px 0 0;
+    font-size: 18px;
+    margin: 4px 8px 0 0;
 }
 
 .clear-block-button:hover {
@@ -64,14 +67,15 @@
 }
 
 .two-column-colored-block.wide-container {
-    padding: 48px 0 16px 0;
+    padding: 64px 0 36px 0;
     background-image: linear-gradient(to right, #687, #8a9);
+    box-shadow: inset 1px 8px 16px -8px rgb(0, 0, 0, 0.3);
 }
 
 .two-column-colored-block p {
     color: #fff;
     padding: 16px;
-    font-size: 20px;
+    font-size: 22px;
     margin: 0;
 }
 
@@ -84,51 +88,55 @@
     background: #fff;
     color: #777;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 18px;
     margin: 4px 0 48px 16px;
 }
 
 .colored-block-button:hover {
-    background: #fff;
-    color: #aaa;
+    background: #ddd;
+    color: #666;
 }
 
 
 /*** When purecss grid blocks change layout at MD *****************************/
 
-@media screen and (max-width: 767.9px) {
+@media screen and (max-width: 863.9px) {
 
-    .text-over-image-block  {
-        background-size: 120% auto;
+    .text-over-image-block,
+    .text-over-image-block.reverse {
+        background-position: top;
+        background-size: 140% auto;
     }
 
     .text-over-image-block .wide-container,
     .text-over-image-block.reverse .wide-container {
         background-image: linear-gradient(
-            rgba(255, 255, 255, 0.3),
-            rgba(255, 255, 255, 0.8),
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.25),
+            #fff,
             #fff,
             #fff);
+        padding: 0 0 16px 0;
     }
 
     .text-over-image-block p {
-        margin-top: 80px;
+        margin: 240px 0 0 0;
     }
 
     .text-over-image-block .buttons {
         padding-left: 0;
-        width: 308px;
+        width: 350px;
         margin-left: auto;
         margin-right: auto;
     }
 
     .clear-block-button {
-        font-size: 14px;
-        margin: 0 4px;
+        font-size: 16px;
     }
 
     .colored-block-button {
-        font-size: 14px;
+        font-size: 16px;
     }
 
 }
@@ -136,15 +144,18 @@
 
 /*** When purecss grid blocks change layout at SM *****************************/
 
-@media screen and (max-width: 567.9px) {
+@media screen and (max-width: 639.9px) {
 
-    .text-over-image-block .wide-container,
-    .text-over-image-block.reverse .wide-container {
-        background-image: linear-gradient(
-            rgba(255, 255, 255, 0.3),
-            #fff,
-            #fff,
-            #fff);
+    .two-column-colored-block .pure-1 {
+        text-align: center;
+    }
+
+    .two-column-colored-block .colored-block-button {
+        margin: 0 0 48px 0;
+    }
+
+    .two-column-colored-block p {
+        padding: 4px 16px 16px 16px;
     }
 
 }
@@ -158,6 +169,18 @@
         width: 100%;
     }
 
+    .text-over-image-block p {
+        font-size: 20px;
+    }
+
+    .two-column-colored-block p {
+        font-size: 20px;
+    }
+
+    .two-column-colored-block.wide-container {
+        padding: 48px 0 16px 0;
+    }
+
 }
 
 
@@ -169,8 +192,31 @@
         width: 100%;
     }
 
-    .text-over-image-block .wide-container {
-        padding: 48px 0 20px 0;
+    .text-over-image-block p {
+        font-size: 18px;
+    }
+
+    .two-column-colored-block p {
+        font-size: 18px;
+    }
+
+    .text-over-image-block .buttons {
+        padding-left: 16px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .clear-block-button {
+        font-size: 13px;
+    }
+
+    .colored-block-button {
+        font-size: 13px;
+    }
+
+    .two-column-colored-block.wide-container {
+        padding: 48px 0 8px 0;
     }
 
 }
