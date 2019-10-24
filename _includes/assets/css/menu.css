@@ -57,7 +57,7 @@
 }
 
 #menu-spacer {
-    margin-bottom: 64px;
+    margin-bottom: 82px;
 }
 
 
@@ -131,6 +131,10 @@
     .menu .logo-text {
         margin-top: 16px;
         line-height: 16px;
+    }
+
+    #menu-spacer {
+        margin-bottom: 72px;
     }
 
 }

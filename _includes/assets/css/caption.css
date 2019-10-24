@@ -1,0 +1,48 @@
+
+/*** Style for desktop ********************************************************/
+
+.caption {
+    background-color: #885;
+    height: 280px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.caption-text {
+    color: #fff;
+    width: 600px;
+    text-align: center;
+    padding-top: 100px;
+}
+
+
+/*** Style for tablet *********************************************************/
+
+/* @media screen and (max-width: 1040px) and (min-width: 720px) {
+
+    .caption {
+        height: 8em;
+        margin-bottom: 1.5em;
+        padding-top: 3em;
+    }
+    .caption-text {
+        width: 30em;
+    }
+
+} */
+
+
+/*** Style for mobile *********************************************************/
+
+/* @media screen and (max-width: 719px) {
+
+    .caption {
+        height: 7em;
+        margin-bottom: 1em;
+        padding-top: 2em;
+    }
+    .caption-text {
+        width: 25em;
+    }
+
+} */

@@ -2,7 +2,7 @@
 /*** Style for desktop ********************************************************/
 
 #welcome-block {
-    background-image: linear-gradient(to right, #768, #98a);
+    background-image: linear-gradient(to right, #222, #444);
     padding: 90px 0 110px 0;
 }
 
@@ -19,7 +19,7 @@
 #welcome-block h2 {
     margin: 0 16px;
     font-size: 26px;
-    color: #fff;
+    color: #ddd;
     font-weight: normal;
 }
 

@@ -3,7 +3,6 @@
 
 body {
     font-size: 16px;
-    background-image: linear-gradient(to right, #768, #98a);
     font-family: 'Vollkorn', serif !important;
 }
 h1, .menu, footer a, .pure-g [class *= "pure-u"] h1 {
@@ -17,7 +16,9 @@ p, .pure-g [class *= "pure-u"] {
 {% include /assets/css/footer.css %}
 {% include /assets/css/caroussel.css %}
 {% include /assets/css/welcome.css %}
+{% include /assets/css/main.css %}
 {% include /assets/css/components.css %}
+{% include /assets/css/caption.css %}
 
 
 
@@ -42,48 +43,6 @@ p, .pure-g [class *= "pure-u"] {
 .calendar {
     width: 1040px;
 }
-
-
-/* CAPTION */
-.caption {
-    background-color: #885;
-    height: 9em;
-    margin-bottom: 2em;
-    padding-top: 4em;
-}
-.caption-text {
-    color: #fff;
-    width: 35em;
-    text-align: center;
-}
-
-
-/* MEDIA QUERIES */
-/* @media screen and (max-width: 65em, min-width: 45em) {
-
-    .caption {
-        height: 8em;
-        margin-bottom: 1.5em;
-        padding-top: 3em;
-    }
-    .caption-text {
-        width: 30em;
-    }
-
-}
-
-@media screen and (max-width: 44.99em) {
-
-    .caption {
-        height: 7em;
-        margin-bottom: 1em;
-        padding-top: 2em;
-    }
-    .caption-text {
-        width: 25em;
-    }
-
-} */
 
 /* PATCHES */
 .pure-g {

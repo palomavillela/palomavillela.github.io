@@ -18,7 +18,8 @@
 }
 
 .text-over-image-block.reverse {
-    background-position: bottom right;
+    background-position: top right;
+    background-size: 50% auto;
 }
 
 .text-over-image-block .wide-container {
@@ -36,8 +37,8 @@
     background-image: linear-gradient(
         to left,
         rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
         rgba(255, 255, 255, 0.25),
-        #fff,
         #fff,
         #fff);
 }
@@ -68,7 +69,7 @@
 
 .two-column-colored-block.wide-container {
     padding: 64px 0 36px 0;
-    background-image: linear-gradient(to right, #687, #8a9);
+    background-image: linear-gradient(to right, #465, #687);
     box-shadow: inset 1px 8px 16px -8px rgb(0, 0, 0, 0.3);
 }
 
@@ -102,10 +103,14 @@
 
 @media screen and (max-width: 863.9px) {
 
-    .text-over-image-block,
+    .text-over-image-block {
+        background-position: top left;
+        background-size: 100% auto;
+    }
+
     .text-over-image-block.reverse {
-        background-position: top;
-        background-size: 140% auto;
+        background-position: top right;
+        background-size: 100% auto;
     }
 
     .text-over-image-block .wide-container,
@@ -115,13 +120,12 @@
             rgba(255, 255, 255, 0),
             rgba(255, 255, 255, 0.25),
             #fff,
-            #fff,
             #fff);
         padding: 0 0 16px 0;
     }
 
     .text-over-image-block p {
-        margin: 240px 0 0 0;
+        margin: 400px 0 0 0;
     }
 
     .text-over-image-block .buttons {
@@ -146,6 +150,16 @@
 
 @media screen and (max-width: 639.9px) {
 
+    .text-over-image-block {
+        background-position: top left;
+        background-size: auto 100%;
+    }
+
+    .text-over-image-block.reverse {
+        background-position: top right;
+        background-size: 100% auto;
+    }
+
     .two-column-colored-block .pure-1 {
         text-align: center;
     }
@@ -156,6 +170,28 @@
 
     .two-column-colored-block p {
         padding: 4px 16px 16px 16px;
+    }
+
+}
+
+
+/*** Style for COW ************************************************************/
+
+@media screen and (max-width: 1340px) and (min-width: 864px) {
+
+    .text-over-image-block.reverse {
+        background-position: top right;
+        background-size: auto 100%;
+    }
+
+    .text-over-image-block.reverse .wide-container {
+        background-image: linear-gradient(
+            to left,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.25),
+            #fff,
+            #fff,
+            #fff);
     }
 
 }
@@ -217,6 +253,11 @@
 
     .two-column-colored-block.wide-container {
         padding: 48px 0 8px 0;
+    }
+
+    .text-over-image-block.reverse {
+        background-position: top right;
+        background-size: auto 65%;
     }
 
 }
