@@ -2,7 +2,7 @@
 /*** Style for desktop ********************************************************/
 
 .caption {
-    background-color: #885;
+    /* background-color: #885; */
     height: 280px;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,31 +18,31 @@
 
 /*** Style for tablet *********************************************************/
 
-/* @media screen and (max-width: 1040px) and (min-width: 720px) {
+@media screen and (max-width: 1040px) and (min-width: 720px) {
 
     .caption {
-        height: 8em;
-        margin-bottom: 1.5em;
-        padding-top: 3em;
-    }
-    .caption-text {
-        width: 30em;
+        height: 240px;
     }
 
-} */
+    .caption-text {
+        width: 450px;
+        padding-top: 80px;
+    }
+
+}
 
 
 /*** Style for mobile *********************************************************/
 
-/* @media screen and (max-width: 719px) {
+@media screen and (max-width: 719px) {
 
     .caption {
-        height: 7em;
-        margin-bottom: 1em;
-        padding-top: 2em;
-    }
-    .caption-text {
-        width: 25em;
+        height: 200px;
     }
 
-} */
+    .caption-text {
+        width: 300px;
+        padding-top: 60px;
+    }
+
+}

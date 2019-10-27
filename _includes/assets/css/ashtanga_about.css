@@ -1,0 +1,100 @@
+
+/*** Style for desktop ********************************************************/
+
+.text-over-image-block.ashtanga-about {
+    background-position: center left;
+    background-size: 50% auto;
+}
+
+.text-over-image-block.reverse.ashtanga-about {
+    background-position: top right;
+    background-size: 55% auto;
+}
+
+.text-over-image-block.reverse.ashtanga-about .wide-container {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.25),
+        #fff,
+        #fff,
+        #fff);
+}
+
+.two-column-colored-block.wide-container.ashtanga-about {
+    padding: 64px 0 52px 0;
+}
+
+
+/*** When welcome block changes spacing ***************************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block.ashtanga-about {
+        padding: 70px 0 70px 0;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at MD *****************************/
+
+@media screen and (max-width: 863.9px) {
+
+    .text-over-image-block.ashtanga-about {
+        background-position: top left;
+        background-size: 100% auto;
+    }
+
+    .text-over-image-block.reverse.ashtanga-about {
+        background-position: top right;
+        background-size: 100% auto;
+    }
+
+    .text-over-image-block.ashtanga-about.no-buttons p {
+        margin-bottom: 32px;
+    }
+
+    .text-over-image-block.reverse.ashtanga-about .wide-container {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.25),
+            #fff,
+            #fff);
+        padding: 0 0 16px 0;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at SM *****************************/
+
+@media screen and (max-width: 639.9px) {
+
+    .text-over-image-block.ashtanga-about {
+        background-position: top center;
+        background-size: auto 80%;
+    }
+
+    .text-over-image-block.reverse.ashtanga-about {
+        background-position: 85% 0px;
+        background-size: auto 80%;
+    }
+
+}
+
+
+/*** Style for short pics *****************************************************/
+
+@media screen and (max-width: 1600px) and (min-width: 864px) {
+
+    .text-over-image-block.ashtanga-about {
+        background-size: auto 115%;
+    }
+
+    .text-over-image-block.reverse.ashtanga-about {
+        background-size: auto 115%;
+    }
+
+}
