@@ -20,6 +20,7 @@ p, .pure-g [class *= "pure-u"] {
 {% include /assets/css/components.css %}
 {% include /assets/css/caption.css %}
 {% include /assets/css/ashtanga_about.css %}
+{% include /assets/css/ashtanga_instructors.css %}
 
 
 /* CALENDAR */

@@ -1,0 +1,106 @@
+
+/*** Style for desktop ********************************************************/
+
+.text-over-image-block.ashtanga-instructors-paloma {
+    background-position: top left;
+    background-size: 50% auto;
+}
+
+.text-over-image-block.reverse.ashtanga-instructors-paloma {
+    background-position: top right;
+    background-size: 50% auto;
+}
+
+.text-over-image-block.reverse.ashtanga-instructors-paloma .wide-container {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        #fff,
+        #fff,
+        #fff);
+}
+
+.two-column-colored-block.wide-container.ashtanga-instructors-paloma {
+    padding: 64px 0 64px 0;
+}
+
+
+/*** When welcome block changes spacing ***************************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block.ashtanga-instructors-paloma {
+        padding: 70px 0 70px 0;
+    }
+
+}
+
+/*** When Sharath image should become auto ************************************/
+
+@media screen and (max-width: 1320px) and (min-width: 864px) {
+
+    .text-over-image-block.ashtanga-instructors-paloma.reverse {
+        background-size: auto 100%;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at MD *****************************/
+
+@media screen and (max-width: 863.9px) {
+
+    .text-over-image-block.ashtanga-instructors-paloma {
+        background-position: top left;
+        background-size: 100% auto;
+    }
+
+    .text-over-image-block.reverse.ashtanga-instructors-paloma {
+        background-position: top right;
+        background-size: 100% auto;
+    }
+
+    .text-over-image-block.ashtanga-instructors-paloma.no-buttons p {
+        margin-bottom: 32px;
+    }
+
+    .text-over-image-block.reverse.ashtanga-instructors-paloma .wide-container {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            #fff,
+            #fff);
+        padding: 0 0 16px 0;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at SM *****************************/
+
+@media screen and (max-width: 639.9px) {
+
+    .text-over-image-block.ashtanga-instructors-paloma {
+        background-position: top center;
+        background-size: auto 95%;
+    }
+
+    .text-over-image-block.reverse.ashtanga-instructors-paloma {
+        background-position: top center;
+        background-size: auto 70%;
+    }
+
+}
+
+
+/*** Style for short pics *****************************************************/
+
+@media screen and (max-width: 950px) and (min-width: 864px) {
+
+    .text-over-image-block.ashtanga-instructors-paloma {
+        background-size: auto 100%;
+    }
+
+}

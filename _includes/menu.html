@@ -7,14 +7,7 @@
                 </div>
             </a>
             <ul class="pure-menu-list">
-                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover{%
-                    if include.this_page == 'ashtanga/about' or
-                    include.this_page == 'ashtanga/instructors' or
-                    include.this_page == 'ashtanga/timetable' or
-                    include.this_page == 'ashtanga/location' or
-                    include.this_page == 'ashtanga/prices' or
-                    include.this_page == 'ashtanga/etiquette'
-                    %} pure-menu-selected{% endif %}">
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
                     <a href="#" class="pure-menu-link">{{ include.text_ashtanga_classes }}</a>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
@@ -23,8 +16,8 @@
                             </a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/instructors.html" class="pure-menu-link">
-                                {{ include.text_instructors }}
+                            <a href="/{{ include.language }}/ashtanga/instructors/paloma.html" class="pure-menu-link">
+                                {{ include.text_the_teacher }}
                             </a>
                         </li>
                         <li class="pure-menu-item">
@@ -49,12 +42,12 @@
                         </li>
                     </ul>
                 </li>
-                <li class="pure-menu-item{% if include.this_page == 'events' %} pure-menu-selected{% endif %}">
+                <li class="pure-menu-item">
                     <a class="pure-menu-link" href="/{{ include.language }}/events/index.html">
                         {{ include.text_events }}
                     </a>
                 </li>
-                <li class="pure-menu-item{% if include.this_page == 'contact' %} pure-menu-selected{% endif %}">
+                <li class="pure-menu-item">
                     <a class="pure-menu-link" href="/{{ include.language }}/contact.html">
                         {{ include.text_contact }}
                     </a>
@@ -105,8 +98,8 @@
                             </a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/instructors.html" class="pure-menu-link indented">
-                                {{ include.text_instructors }}
+                            <a href="/{{ include.language }}/ashtanga/instructors/paloma.html" class="pure-menu-link indented">
+                                {{ include.text_the_teacher }}
                             </a>
                         </li>
                         <li class="pure-menu-item">
