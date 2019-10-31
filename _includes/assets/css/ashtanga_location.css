@@ -1,0 +1,39 @@
+/*** Style for desktop ********************************************************/
+
+#map-holder {
+    height: 600px;
+}
+
+.ashtanga-location .slide-text {
+    padding-top: 300px;
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1040px) and (min-width: 720px) {
+
+    #map-holder {
+        height: 500px;
+    }
+
+    .ashtanga-location .slide-text {
+        padding-top: 200px;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    #map-holder {
+        height: 400px;
+    }
+
+    .ashtanga-location .slide-text {
+        padding-top: 150px;
+    }
+
+}

@@ -1,0 +1,37 @@
+
+.calendar {
+    width: 1040px;
+    padding: 84px 0px;
+}
+
+.calendar.mobile {
+    display: none;
+}
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1092px) and (min-width: 720px) {
+
+    .calendar {
+        width: 95%;
+        padding: 52px 0px;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    .calendar.mobile {
+        display: inherit;
+        width: 95%;
+        padding: 48px 0px;
+    }
+
+    .calendar {
+        display: none;
+    }
+
+}

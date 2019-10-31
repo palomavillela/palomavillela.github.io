@@ -4,12 +4,13 @@ title: Horario - Ashtanga PadmaWorld
 menu_include: /es/menu.html
 footer_include: /es/footer.html
 this_page: ashtanga/timetable
-caption: Horarios
 ---
-{% include /caption.html %}
-<div class="desktop calendar centered">
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FMadrid&amp;src=cGFkbWF3b3JsZC5jb21fc3ZzYmpwZ2JyaTFvY3NxazVnamNic2NhbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%234285F4&amp;showTitle=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=MONTH&amp;hl=es" style="border-width:0" width="1040" height="600" frameborder="0" scrolling="no"></iframe>
-</div>
-<div class="mobile calendar centered">
-    <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=2&amp;bgcolor=%23ffffff&amp;ctz=Europe%2FMadrid&amp;src=cGFkbWF3b3JsZC5jb21fc3ZzYmpwZ2JyaTFvY3NxazVnamNic2NhbThAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&amp;color=%234285F4&amp;showTitle=0&amp;showDate=1&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;hl=es" style="border-width:0" width="480" height="600" frameborder="0" scrolling="no"></iframe>
-</div>
+{%
+    include /ashtanga/timetable.html
+    language = "es"
+
+    text_caption = "Horarios"
+    text_welcome = "Ofrecemos clases diarias de lunes a viernes por la mañana. Ten en cuenta que en ashtanga yoga tradicionalmente no se practica en los días de luna llena o luna nueva. Comprueba los horarios en el calendario, está siempre actualizado."
+    text_location = "Nuestra ubicación"
+    text_prices = "Precios"
+%}

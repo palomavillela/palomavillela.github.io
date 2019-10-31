@@ -21,12 +21,9 @@ p, .pure-g [class *= "pure-u"] {
 {% include /assets/css/caption.css %}
 {% include /assets/css/ashtanga_about.css %}
 {% include /assets/css/ashtanga_instructors.css %}
+{% include /assets/css/ashtanga_timetable.css %}
+{% include /assets/css/ashtanga_location.css %}
 
-
-/* CALENDAR */
-.calendar {
-    width: 1040px;
-}
 
 /* PATCHES */
 .pure-g {
