@@ -3,22 +3,22 @@
         {%
             include /slide.html
             background_image = "/assets/images/shala_inside.jpg"
-            text_title = "Ubicación"
+            text_title = include.text_caption
         %}
         {%
             include /slide.html
             background_image = "/assets/images/the_yoga_hut.jpg"
-            text_title = "Ubicación"
-            %}
+            text_title = include.text_caption
+        %}
         {%
             include /slide.html
             background_image = "/assets/images/ganesha.jpg"
-            text_title = "Ubicación"
+            text_title = include.text_caption
         %}
         {%
             include /slide.html
             background_image = "/assets/images/window.jpg"
-            text_title = "Ubicación"
+            text_title = include.text_caption
         %}
     </div>
 </div>
@@ -27,10 +27,10 @@
         <h2>{{ include.text_welcome }}</h2>
     </div>
     <div class="centered-container buttons">
-        <a class="pure-button colored-block-button" href="/es/ashtanga/prices.html">
+        <a class="pure-button colored-block-button" href="/{{ include.language }}/ashtanga/prices.html">
             {{ include.text_prices }}
         </a>
-        <a class="pure-button colored-block-button" href="/es/ashtanga/etiquette.html">
+        <a class="pure-button colored-block-button" href="/{{ include.language }}/ashtanga/etiquette.html">
             {{ include.text_etiquette }}
         </a>
     </div>
