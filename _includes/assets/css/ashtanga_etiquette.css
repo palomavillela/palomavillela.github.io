@@ -1,0 +1,79 @@
+/*** Style for desktop ********************************************************/
+
+.ashtanga-etiquette.centered-container {
+    width: 1040px;
+}
+
+.ashtanga-etiquette table {
+    margin: 72px 0 48px 0;
+    width: 100%;
+    line-height: 24px;
+}
+
+.ashtanga-etiquette.centered-container.buttons {
+    width: 200px !important;
+    margin-bottom: 64px;
+}
+
+#welcome-block.ashtanga-etiquette {
+    padding: 90px 0 100px 0;
+}
+
+
+/*** When welcome block changes spacing ***************************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block.ashtanga-etiquette {
+        padding: 70px 0 70px 0;
+    }
+
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 1140px) and (min-width: 720px) {
+
+    .ashtanga-etiquette.centered-container {
+        width: 90% !important;
+    }
+
+    .ashtanga-etiquette table {
+        margin: 68px 0 40px 0;
+    }
+
+    #welcome-block.ashtanga-etiquette {
+        padding: 64px 0 64px 0;
+    }
+
+    .ashtanga-etiquette.centered-container.buttons {
+        width: 180px !important;
+        margin-bottom: 58px;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    .ashtanga-etiquette.centered-container {
+        width: 90% !important;
+    }
+
+    .ashtanga-etiquette table {
+        margin: 62px 0 32px 0;
+    }
+
+    #welcome-block.ashtanga-etiquette {
+        padding: 60px 0 60px 0;
+    }
+
+    .ashtanga-etiquette.centered-container.buttons {
+        width: 130px !important;
+        margin-bottom: 48px;
+    }
+
+}

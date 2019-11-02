@@ -8,6 +8,45 @@
     padding-top: 300px;
 }
 
+.ashtanga-location .buttons {
+    width: 320px;
+    margin-top: 28px;
+    margin-bottom: -40px;
+}
+
+#welcome-block.ashtanga-location {
+    padding: 60px 0 70px 0;
+}
+
+
+/*** When purecss grid blocks change layout at LG *****************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block.ashtanga-location {
+        padding: 50px 0 70px 0;
+    }
+
+    .ashtanga-location .buttons {
+        margin-top: 20px;
+        margin-bottom: -40px;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at MD *****************************/
+
+@media screen and (max-width: 863.9px) {
+
+    .ashtanga-location .buttons {
+        width: 300px;
+        margin-top: 20px;
+        margin-bottom: -60px;
+    }
+
+}
+
 
 /*** Style for tablet *********************************************************/
 
@@ -34,6 +73,12 @@
 
     .ashtanga-location .slide-text {
         padding-top: 150px;
+    }
+
+    .ashtanga-location .buttons {
+        width: 250px;
+        margin-top: 10px;
+        margin-bottom: -50px;
     }
 
 }

@@ -1,12 +1,29 @@
 
 .calendar {
     width: 1040px;
-    padding: 84px 0px;
+    padding: 84px 0 32px 0;
 }
 
 .calendar.mobile {
     display: none;
 }
+
+.ashtanga-timetable .centered-container.buttons {
+    width: 340px !important;
+    margin-bottom: 72px;
+}
+
+
+/*** When welcome block changes spacing ***************************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block.ashtanga-timetable {
+        padding: 70px 0 70px 0;
+    }
+
+}
+
 
 /*** Style for tablet *********************************************************/
 
@@ -14,7 +31,12 @@
 
     .calendar {
         width: 95%;
-        padding: 52px 0px;
+        padding: 52px 0 28px 0;
+    }
+
+    .ashtanga-timetable .centered-container.buttons {
+        width: 300px !important;
+        margin-bottom: 48px;
     }
 
 }
@@ -27,11 +49,16 @@
     .calendar.mobile {
         display: inherit;
         width: 95%;
-        padding: 48px 0px;
+        padding: 48px 0 26px 0;
     }
 
     .calendar {
         display: none;
+    }
+
+    .ashtanga-timetable .centered-container.buttons {
+        width: 220px !important;
+        margin-bottom: 36px;
     }
 
 }

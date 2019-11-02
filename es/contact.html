@@ -4,31 +4,22 @@ title: Contacto - Ashtanga PadmaWorld
 menu_include: /es/menu.html
 footer_include: /es/footer.html
 this_page: contact
-caption: Contacto
 ---
-{% include /caption.html %}
-<div class="centered-container">
-    <div class="pure-g">
-        <div class="pure-u-1-2">
-            <h2>Teléfono</h2>
-            <p><a href="tel:0034606641726" data-rel="external">(+34) 606 641 726</a></p>
-            <h2>Email</h2>
-            <p><a href="mailto:info@padmaworld.com" data-rel="external">info@padmaworld.com</a></p>
-            <h2>Instagram</h2>
-            <p><a href="https://www.instagram.com/padmaworld/" target="_blank">@padmaworld</a></p>
-        </div>
-        <div class="pure-u-1-2">
-            <iframe width="480" height="450" frameborder="0" style="border:0" src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJ6z2mA2jBlxIROjpJLj0K9C4&key=AIzaSyB5nfqUaTntHWCgKK6asnsxmG-zUBPSVA8" allowfullscreen></iframe>
-        </div>
-        <div class="pure-u-1-2">
-            <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdiojPL3r3Q13wtWCw0oqwZn0qvvtuZC98AMZtZ-kxACfiz4w/viewform?embedded=true" width="480" height="830" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-        </div>
-        <div class="pure-u-1-2">
-            <h1>Preguntas frecuentes</h1>
-            <ul>
-                <li>Blah</li>
-                <li>Blah1</li>
-            </ul>
-        </div>
-    </div>
-</div>
+{%
+    include /contact.html
+    language = "es"
+
+    text_caption = "Contacto"
+    text_faq = "Preguntas frecuentes"
+    text_question_1 = "No soy flexible, puedo hacer yoga?"
+    text_answer_1 = "No es importante ser flexible para practicar yoga, la flexibilidad vendrá con la práctica."
+    text_question_2 = "Hay que confirmar asistencia?"
+    text_answer_2 = "Si no sabes la secuencia de posturas o estás en tus primeras clases, es importante confirmar asistencia; me va ayudar a darte la atención que necesitas."
+    text_question_3 = "Hace falta llevar una esterilla?"
+    text_answer_3 = "Lo mejor es tener tu propria esterilla antideslizante, aunque siempre puedes alquilar una del estudio por 1 euro."
+    text_question_4 = "Que tipo de ropa debo usar?"
+    text_answer_4 = "Ropa comoda."
+    text_question_5 = "Que horario teneis para quien nunca ha hecho yoga antes?"
+    text_answer_5 = "Los iniciantes deben venir siempre al principio de las clases. Después podrán ajustar sus horarios conforme su práctica y disponibilidad."
+    text_form = "<iframe src=\"https://docs.google.com/forms/d/e/1FAIpQLSdiojPL3r3Q13wtWCw0oqwZn0qvvtuZC98AMZtZ-kxACfiz4w/viewform?embedded=true\" width=\"100%\" height=\"820\" frameborder=\"0\" marginheight=\"0\" marginwidth=\"0\" class=\"contact-form\">Loading…</iframe>"
+%}

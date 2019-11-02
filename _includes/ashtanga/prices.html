@@ -1,0 +1,40 @@
+{%
+    include /caption.html
+
+    caption = include.text_caption
+    caption_image = "/assets/images/lakshmi.jpg"
+%}
+<div id="welcome-block" class="wide-container ashtanga-prices">
+    <div class="centered-container pure-g">
+        <div class="pure-u-1">
+            <h2>{{ include.text_welcome }}</h2>
+        </div>
+    </div>
+</div>
+<div class="wide-container">
+    <div class="centered-container pure-g ashtanga-prices">
+        <div class="pure-u-1">
+            <table class="pure-table pure-table-bordered">
+                <thead><tr><td>{{ include.text_modality }}</td><td>{{ include.text_price }}</td></tr></thead>
+                <tbody>
+                    <tr><td>{{ include.text_modality_1 }}</td><td>{{ include.text_price_1 }}</td></tr>
+                    <tr><td>{{ include.text_modality_2 }}</td><td>{{ include.text_price_2 }}</td></tr>
+                    <tr><td>{{ include.text_modality_3 }}</td><td>{{ include.text_price_3 }}</td></tr>
+                    <tr><td>{{ include.text_modality_4 }}</td><td>{{ include.text_price_4 }}</td></tr>
+                    <tr><td>{{ include.text_modality_5 }}</td><td>{{ include.text_price_5 }}</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="centered-container ashtanga-prices note">
+        {{ include.text_note }}
+    </div>
+    <div class="centered-container buttons ashtanga-prices">
+        <a class="pure-button clear-block-button" href="/es/ashtanga/etiquette.html">
+            {{ include.text_etiquette }}
+        </a>
+        <a class="pure-button clear-block-button" href="/es/contact.html">
+            {{ include.text_contact }}
+        </a>
+    </div>
+</div>

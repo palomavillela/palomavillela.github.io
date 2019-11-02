@@ -1,0 +1,113 @@
+/*** Style for desktop ********************************************************/
+
+#welcome-block.contact a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#welcome-block.contact h2 {
+    text-align: center;
+    width: 100%;
+    margin: 0 !important;
+}
+
+#welcome-block.contact .icon {
+    width: 50px !important;
+}
+
+#welcome-block.contact .icon img {
+    width: 50px !important;
+}
+
+.contact .faq {
+    margin: 70px 16px 70px 16px;
+}
+
+.contact .faq p {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    padding: 8px;
+    margin: -16px 0 26px 0;
+    font-size: 18px;
+}
+
+.contact .faq h2 {
+    color: #777;
+    margin-bottom: 36px;
+    font-size: 30px;
+}
+
+.contact .faq h3 {
+    color: #444;
+    font-size: 22px;
+}
+
+.contact .contact-form {
+    margin: 70px 0 30px 0;
+}
+
+
+/*** When purecss grid blocks change layout at LG *****************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block.contact {
+        padding: 70px 0 70px 0;
+    }
+
+    #welcome-block.contact img {
+        width: 50px;
+    }
+
+    #welcome-block.contact .icon {
+        width: 70px;
+        margin-bottom: 0;
+    }
+
+    #welcome-block.contact h2 {
+        text-align: center;
+        font-size: 24px;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at MD *****************************/
+
+@media screen and (max-width: 863.9px) {
+
+    .contact .contact-form {
+        margin: 0 0 36px 0;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at SM *****************************/
+
+@media screen and (max-width: 639.9px) {
+
+    #welcome-block.contact .icon {
+        margin-top: 16px;
+    }
+
+    #welcome-block.contact h2 {
+        margin-bottom: 16px !important;
+    }
+
+    #welcome-block.contact {
+        padding: 36px 0 48px 0;
+    }
+
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+
+    #welcome-block.contact h2 {
+        font-size: 22px;
+    }
+
+}
