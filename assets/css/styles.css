@@ -26,6 +26,7 @@ p, .pure-g [class *= "pure-u"] {
 {% include /assets/css/ashtanga_prices.css %}
 {% include /assets/css/ashtanga_etiquette.css %}
 {% include /assets/css/contact.css %}
+{% include /assets/css/events.css %}
 
 
 /* PATCHES */

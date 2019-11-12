@@ -1,0 +1,39 @@
+{%
+    include /caption.html
+
+    caption = include.text_caption
+    caption_image = "/assets/images/inks.jpg"
+%}
+<div id="welcome-block" class="wide-container events">
+    <div class="centered-container pure-g">
+        <div class="pure-u-1">
+            <h2>{{ include.text_welcome }}</h2>
+        </div>
+    </div>
+</div>
+<div id="event-list" class="wide-container events">
+    <div class="centered-container pure-g">
+        <div class="pure-u-1 pure-u-sm-1-2">
+            {%
+                include /event.html
+
+                language = include.language
+                image = "/assets/images/lu2019.jpg"
+                event_id = "lu2019"
+                text_title = include.text_lu2019_title
+                text_subtitle = include.text_lu2019_subtitle
+            %}
+        </div>
+        <div class="pure-u-1 pure-u-sm-1-2">
+            {%
+                include /event.html
+
+                language = include.language
+                image = "/assets/images/self_practice.jpg"
+                event_id = "selfpractice"
+                text_title = include.text_selfpractice_title
+                text_subtitle = include.text_selfpractice_subtitle
+            %}
+        </div>
+    </div>
+</div>
