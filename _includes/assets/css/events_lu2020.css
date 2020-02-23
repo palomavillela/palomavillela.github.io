@@ -1,0 +1,320 @@
+/*** Style for desktop ********************************************************/
+
+.events-lu2020 .caption {
+    height: 720px;
+}
+
+.events-lu2020 .caption-text {
+    padding-top: 430px;
+    width: 600px;
+}
+
+.events-lu2020 .caption-text h1 {
+    font-size: 44px;
+}
+
+#welcome-block {
+    text-align: center;
+}
+
+.events-lu2020 .program h2,
+.events-lu2020 .program .remark,
+.events-lu2020 .clear-block-button {
+    margin-left: 16px;
+}
+
+.events-lu2020 .program table {
+    font-size: 22px;
+    margin: 0 16px 16px 16px;
+    width: 92%;
+}
+
+.events-lu2020 .program p {
+    padding: 0;
+    margin: 24px 16px 0 16px;
+}
+
+.events-lu2020 .program p.note {
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.events-lu2020 .clear-block-button {
+    margin-bottom: 16px;
+}
+
+.events-lu2020 table .time {
+    width: 120px;
+}
+
+.text-over-image-block.events-lu2020 {
+    background-position: center left;
+    background-size: 50% auto;
+}
+
+.text-over-image-block.reverse.events-lu2020 {
+    background-position: top right;
+    background-size: 50% auto;
+}
+
+.text-over-image-block.reverse.events-lu2020 .wide-container {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0.25),
+        #fff,
+        #fff,
+        #fff);
+}
+
+.two-column-colored-block.wide-container.events-lu2020 {
+    padding: 64px 0 64px 0;
+}
+
+.events-lu2020-interview.centered-container {
+    width: 1040px;
+}
+
+.events-lu2020-interview table {
+    margin: 72px 0 48px 0;
+    width: 100%;
+    line-height: 24px;
+}
+
+.events-lu2020-interview table td {
+    padding: 20px 16px;
+}
+
+.events-lu2020-interview.centered-container.buttons {
+    width: 200px !important;
+    margin-bottom: 64px;
+}
+
+#welcome-block.events-lu2020-interview {
+    padding: 90px 0 100px 0;
+}
+
+.events-lu2020-interview .caption {
+    height: 700px;
+}
+
+.events-lu2020-interview .caption-text {
+    padding-top: 330px;
+    width: 600px;
+}
+
+.events-lu2020-interview .caption-text h1 {
+    font-size: 44px;
+}
+
+.events-lu2020-interview .pure-table-odd {
+    font-weight: bold;
+    color: #444;
+}
+
+
+/*** When welcome block changes spacing ***************************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block.events, #welcome-block.events-lu2020 {
+        padding: 70px 0 70px 0;
+    }
+
+    .text-over-image-block.events-lu2020 {
+        background-size: auto 120%;
+    }
+
+    .text-over-image-block.reverse.events-lu2020 {
+        background-size: 52% auto;
+    }
+
+    .text-over-image-block.reverse.events-lu2020 .wide-container {
+        padding: 48px 0 36px 0;
+    }
+
+    .events-lu2020 .program table {
+        font-size: 20px;
+    }
+}
+
+
+/*** When purecss grid blocks change layout at MD *****************************/
+
+@media screen and (max-width: 863.9px) {
+
+    .text-over-image-block.events-lu2020 {
+        background-position: center -330px;
+        background-size: auto;
+    }
+
+    .text-over-image-block.reverse.events-lu2020 {
+        background-position: top right !important;
+        background-size: 100% auto !important;
+    }
+
+    .text-over-image-block.reverse.events-lu2020 .wide-container {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0.25),
+            #fff,
+            #fff,
+            #fff);
+        padding: 0 0 16px 0;
+    }
+
+    .text-over-image-block .program {
+        margin: 420px 0 0 0;
+    }
+
+    .events-lu2020 .clear-block-button {
+        margin-bottom: 32px;
+    }
+
+}
+
+
+/*** Style for tablet *********************************************************/
+
+@media screen and (max-width: 960px) and (min-width: 640px) {
+
+    .events-lu2020 .caption {
+        height: 520px;
+    }
+
+    .events-lu2020 .caption-text {
+        padding-top: 290px;
+        width: 480px;
+    }
+
+    .events-lu2020 .caption-text h1 {
+        font-size: 36px;
+    }
+
+    .text-over-image-block.reverse.events-lu2020 {
+        background-position: right -80px top 0;
+        background-size: 65% auto;
+    }
+
+}
+
+/*** Style for tablet for the interview ***************************************/
+
+@media screen and (max-width: 1140px) and (min-width: 720px) {
+
+    .events-lu2020-interview.centered-container {
+        width: 90% !important;
+    }
+
+    .events-lu2020-interview table {
+        margin: 68px 0 40px 0;
+    }
+
+    #welcome-block.events-lu2020-interview {
+        padding: 64px 0 64px 0;
+    }
+
+    .events-lu2020-interview.centered-container.buttons {
+        width: 180px !important;
+        margin-bottom: 58px;
+    }
+
+    #welcome-block.events-lu2020-interview {
+        padding: 70px 0 70px 0;
+    }
+
+    .events-lu2020-interview .caption {
+        height: 400px;
+    }
+
+    .events-lu2020-interview .caption-text {
+        padding-top: 150px;
+        width: 500px;
+    }
+
+    .events-lu2020-interview .caption-text h1 {
+        font-size: 38px;
+    }
+}
+
+
+/*** Style for mobile *********************************************************/
+
+@media screen and (max-width: 719px) {
+    .events-lu2020 .program table {
+        font-size: 18px;
+    }
+
+    .text-over-image-block .program {
+        margin: 380px 0 0 0 !important;
+    }
+
+    .events-lu2020-interview.centered-container {
+        width: 90% !important;
+    }
+
+    .events-lu2020-interview table {
+        margin: 62px 0 32px 0;
+    }
+
+    #welcome-block.events-lu2020-interview {
+        padding: 60px 0 60px 0;
+    }
+
+    .events-lu2020-interview.centered-container.buttons {
+        width: 130px !important;
+        margin-bottom: 48px;
+    }
+
+    .events-lu2020-interview .caption {
+        height: 400px;
+    }
+
+    .events-lu2020-interview .caption-text {
+        padding-top: 150px;
+        width: 400px;
+    }
+
+    .events-lu2020-interview .caption-text h1 {
+        font-size: 36px;
+    }
+}
+
+
+/*** When purecss grid blocks change layout at SM *****************************/
+
+@media screen and (max-width: 639.9px) {
+
+    .events-lu2020 .caption {
+        height: 380px;
+    }
+
+    .events-lu2020 .caption-text {
+        padding-top: 210px;
+        width: 320px;
+    }
+
+    .events-lu2020 .caption-text h1 {
+        font-size: 28px;
+    }
+
+    .text-over-image-block.reverse.events-lu2020 {
+        background-position: top center !important;
+        background-size: 120% auto !important;
+    }
+
+    .events-lu2020-interview .caption {
+        height: 200px;
+    }
+
+    .events-lu2020-interview .caption-text {
+        padding-top: 60px;
+        width: 320px;
+    }
+
+    .events-lu2020-interview .caption-text h1 {
+        font-size: 28px;
+    }
+
+}

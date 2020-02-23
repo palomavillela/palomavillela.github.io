@@ -1,0 +1,42 @@
+<div class="events-lu2020-interview">
+    {%
+        include /caption.html
+
+        caption = include.text_caption
+        caption_image = "/assets/images/lu2020_interview.jpg"
+    %}
+</div>
+<div id="welcome-block" class="wide-container events-lu2020-interview">
+    <div class="centered-container pure-g">
+        <div class="pure-u-1">
+            <h2>{{ include.text_welcome }}</h2>
+        </div>
+    </div>
+</div>
+<div class="wide-container">
+    <div class="centered-container pure-g events-lu2020-interview">
+        <div class="pure-u-1">
+            <table class="pure-table pure-table-bordered">
+                <tbody>
+                    <tr class="pure-table-odd"><td>{{ include.text_question_1 }}</td></tr>
+                    <tr><td>{{ include.text_answer_1 }}</td></tr>
+                    <tr class="pure-table-odd"><td>{{ include.text_question_2 }}</td></tr>
+                    <tr><td>{{ include.text_answer_2 }}</td></tr>
+                    <tr class="pure-table-odd"><td>{{ include.text_question_3 }}</td></tr>
+                    <tr><td>{{ include.text_answer_3 }}</td></tr>
+                    <tr class="pure-table-odd"><td>{{ include.text_question_4 }}</td></tr>
+                    <tr><td>{{ include.text_answer_4 }}</td></tr>
+                    <tr class="pure-table-odd"><td>{{ include.text_question_5 }}</td></tr>
+                    <tr><td>{{ include.text_answer_5 }}</td></tr>
+                    <tr class="pure-table-odd"><td>{{ include.text_question_6 }}</td></tr>
+                    <tr><td>{{ include.text_answer_6 }}</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="centered-container buttons events-lu2020-interview">
+        <a class="pure-button clear-block-button" href="/{{ include.language }}/events/lu2020.html">
+            {{ include.text_back }}
+        </a>
+    </div>
+</div>
