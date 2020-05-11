@@ -50,16 +50,25 @@
                     <h2>{{ include.text_program }}</h2>
                     <table class="pure-table">
                         <tbody>
-                            <tr><td class="time">08:00-11:00</td><td>{{ include.text_ashtanga_practice }}</td></tr>
-                            <tr><td class="time">11:00-12:00</td><td>{{ include.text_pause }}</td></tr>
-                            <tr><td class="time">12:00-13:00</td><td>{{ include.text_conference }}</td></tr>
+                            <tr><td class="time">09:00-10:30</td><td>{{ include.text_ashtanga_practice }}</td></tr>
+                            <tr><td class="time">10:30-11:00</td><td>{{ include.text_pause }}</td></tr>
+                            <tr><td class="time">11:00-12:15</td><td>{{ include.text_conference }}</td></tr>
                         </tbody>
                     </table>
                     <div class="remark">{{ include.text_note_conference_1 }}</div>
-                    <div class="remark">{{ include.text_note_conference_2 }}</div>
-                    <p>{{ include.text_activity }}</p>
+                    <p>{{ include.text_talks }}</p>
+                    <ol>
+                        <li>{{ include.text_talk_1 }}</li>
+                        <li>{{ include.text_talk_2 }}</li>
+                        <li>{{ include.text_talk_3 }}</li>
+                        <li>{{ include.text_talk_4 }}</li>
+                    </ol>
                     <p>{{ include.text_price }}</p>
                     <p class="note">{{ include.text_note_price }}</p>
+                    <ul>
+                        <li>{{ include.text_price_option_1 }}</li>
+                        <li>{{ include.text_price_option_2 }}</li>
+                    </ul>
                     <a class="pure-button clear-block-button" href="{{ include.link_register }}" target="_blank">
                         {{ include.text_register }}
                     </a>
