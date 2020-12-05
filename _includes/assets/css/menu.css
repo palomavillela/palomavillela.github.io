@@ -20,14 +20,18 @@
 }
 
 .menu .logo-text {
-    margin-top: 20px;
+    margin-top: 18px;
     line-height: 16px;
+    font-size: 15px;
+    font-family: Vollkorn;
 }
 
 .menu .logo-big {
-    font-size: 24px;
-    font-weight: bold;
+    letter-spacing: 7px;
+    font-size: 30px;
     color: #555;
+    font-family: Lato;
+    font-weight: bold;
 }
 
 .menu .pure-menu-list {
@@ -112,8 +116,14 @@
         display: inherit;
     }
 
+    .menu .logo-text {
+        margin-top: 13px;
+        line-height: 16px;
+        font-size: 9px;
+    }
+
     .menu .logo-big {
-        font-size: 21.5px;
+        font-size: 23px;
     }
 
     .menu .pure-menu-link {
@@ -128,13 +138,16 @@
         margin-bottom: -12px;
     }
 
-    .menu .logo-text {
-        margin-top: 16px;
-        line-height: 16px;
-    }
-
     #menu-spacer {
         margin-bottom: 72px;
+    }
+
+    .menu hr {
+        border: 0.5px solid #eee;
+    }
+
+    .menu .pure-menu-children {
+        border-top: 2px solid #eee;
     }
 
 }

@@ -3,49 +3,59 @@
         <div class="pure-menu pure-menu-horizontal">
             <a href="/{{ include.language }}/index.html" class="pure-menu-heading pure-menu-link">
                 <div class="logo-text">
-                    <span class="logo-big">ASHTANGA</span><br>PADMAWORLD
+                    <span class="logo-big">YOGA</span><br>PADMAWORLD
                 </div>
             </a>
             <ul class="pure-menu-list">
                 <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
-                    <a href="#" class="pure-menu-link">{{ include.text_ashtanga_classes }}</a>
+                    <a href="#" class="pure-menu-link">{{ include.text_classes }}</a>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/about.html" class="pure-menu-link">
-                                {{ include.text_about_ashtanga }}
+                            <a href="/{{ include.language }}/classes/online.html" class="pure-menu-link">
+                                {{ include.text_online_classes }}
                             </a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/instructors/paloma.html" class="pure-menu-link">
-                                {{ include.text_the_teacher }}
+                            <a href="/{{ include.language }}/classes/in_person.html" class="pure-menu-link">
+                                {{ include.text_in_person_classes }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item" title="{{ include.text_coming_soon }}">
+                            <a href="/{{ include.language }}/classes/videos.html" class="pure-menu-link pure-menu-disabled">
+                                {{ include.text_video_classes }}
                             </a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/timetable.html" class="pure-menu-link">
-                                {{ include.text_timetable }}
-                            </a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/contact.html" class="pure-menu-link">
-                                {{ include.text_location }}
-                            </a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/contact.html" class="pure-menu-link">
-                                {{ include.text_prices }}
-                            </a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/etiquette.html" class="pure-menu-link">
-                                {{ include.text_etiquette }}
+                            <a href="/{{ include.language }}/classes/events/index.html" class="pure-menu-link">
+                                {{ include.text_eventual_classes }}
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="pure-menu-item">
-                    <a class="pure-menu-link" href="/{{ include.language }}/events/index.html">
-                        {{ include.text_events }}
-                    </a>
+                <li class="pure-menu-item pure-menu-has-children pure-menu-allow-hover">
+                    <a href="#" class="pure-menu-link">{{ include.text_info }}</a>
+                    <ul class="pure-menu-children">
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/info/about_yoga.html" class="pure-menu-link">
+                                {{ include.text_about_yoga }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/info/about_paloma.html" class="pure-menu-link">
+                                {{ include.text_about_paloma }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/info/timetable.html" class="pure-menu-link">
+                                {{ include.text_timetable }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/info/prices.html" class="pure-menu-link">
+                                {{ include.text_prices }}
+                            </a>
+                        </li>
+                    </ul>
                 </li>
                 <li class="pure-menu-item">
                     <a class="pure-menu-link" href="/{{ include.language }}/contact.html">
@@ -80,7 +90,7 @@
         <div class="pure-menu pure-menu-horizontal">
             <a href="/{{ include.language }}/index.html" class="pure-menu-heading pure-menu-link">
                 <div class="logo-text">
-                    <span class="logo-big">ASHTANGA</span><br>PADMAWORLD
+                    <span class="logo-big">YOGA</span><br>PADMAWORLD
                 </div>
             </a>
             <ul class="pure-menu-list">
@@ -90,47 +100,58 @@
                     </a>
                     <ul class="pure-menu-children">
                         <li class="pure-menu-item pure-menu-disabled">
-                            {{ include.text_ashtanga_classes }}
+                            {{ include.text_classes }}
                         </li>
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/about.html" class="pure-menu-link indented">
-                                {{ include.text_about_ashtanga }}
+                            <a class="pure-menu-link indented" href="/{{ include.language }}/classes/online.html">
+                                {{ include.text_online_classes }}
                             </a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/instructors/paloma.html" class="pure-menu-link indented">
-                                {{ include.text_the_teacher }}
+                            <a class="pure-menu-link indented" href="/{{ include.language }}/classes/in_person.html">
+                                {{ include.text_in_person_classes }}
                             </a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/timetable.html" class="pure-menu-link indented">
+                            <a class="pure-menu-link indented" href="/{{ include.language }}/classes/videos.html">
+                                {{ include.text_video_classes }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a class="pure-menu-link indented" href="/{{ include.language }}/classes/events/index.html">
+                                {{ include.text_eventual_classes }}
+                            </a>
+                            <hr>
+                        </li>
+                        <li class="pure-menu-item pure-menu-disabled">
+                            {{ include.text_info }}
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/info/about_yoga.html" class="pure-menu-link indented">
+                                {{ include.text_about_yoga }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/info/about_paloma.html" class="pure-menu-link indented">
+                                {{ include.text_about_paloma }}
+                            </a>
+                        </li>
+                        <li class="pure-menu-item">
+                            <a href="/{{ include.language }}/info/timetable.html" class="pure-menu-link indented">
                                 {{ include.text_timetable }}
                             </a>
                         </li>
                         <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/contact.html" class="pure-menu-link indented">
-                                {{ include.text_location }}
-                            </a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/contact.html" class="pure-menu-link indented">
+                            <a href="/{{ include.language }}/info/prices.html" class="pure-menu-link indented">
                                 {{ include.text_prices }}
                             </a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a href="/{{ include.language }}/ashtanga/etiquette.html" class="pure-menu-link indented">
-                                {{ include.text_etiquette }}
-                            </a>
-                        </li>
-                        <li class="pure-menu-item">
-                            <a class="pure-menu-link" href="/{{ include.language }}/events/index.html">
-                                {{ include.text_events }}
-                            </a>
+                            <hr>
                         </li>
                         <li class="pure-menu-item">
                             <a class="pure-menu-link" href="/{{ include.language }}/contact.html">
                                 {{ include.text_contact }}
                             </a>
+                            <hr>
                         </li>
                         <li class="pure-menu-item pure-menu-disabled">
                             <img class="language-icon" src="/assets/images/icons/icon128px-exported-black.png"/> {{ include.text_language }}
