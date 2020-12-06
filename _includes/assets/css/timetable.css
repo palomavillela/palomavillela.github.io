@@ -8,7 +8,7 @@
     display: none;
 }
 
-.ashtanga-timetable .centered-container.buttons {
+.timetable .centered-container.buttons {
     width: 340px !important;
     margin-bottom: 72px;
 }
@@ -18,7 +18,7 @@
 
 @media screen and (max-width: 1151.9px) {
 
-    #welcome-block.ashtanga-timetable {
+    #welcome-block.timetable {
         padding: 70px 0 70px 0;
     }
 
@@ -34,7 +34,7 @@
         padding: 52px 0 28px 0;
     }
 
-    .ashtanga-timetable .centered-container.buttons {
+    .timetable .centered-container.buttons {
         width: 300px !important;
         margin-bottom: 48px;
     }
@@ -56,7 +56,7 @@
         display: none;
     }
 
-    .ashtanga-timetable .centered-container.buttons {
+    .timetable .centered-container.buttons {
         width: 220px !important;
         margin-bottom: 36px;
     }

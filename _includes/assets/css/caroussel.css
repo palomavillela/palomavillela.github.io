@@ -18,7 +18,7 @@
 
 .slide-text {
     padding-top: 250px;
-    width: 720px;
+    width: 500px;
     margin-left: auto;
     margin-right: auto;
     text-align: center;
@@ -30,11 +30,11 @@
     margin-bottom: 3px;
 }
 
-.slide-text h2 {
-    text-transform: uppercase;
+.slide-text span {
     margin-top: 3px;
     margin-bottom: 16px;
     font-size: 24px;
+    display: block;
 }
 
 .slide-text .pure-button {
@@ -69,14 +69,14 @@
 
     .slide-text {
         padding-top: 150px;
-        width: 512px;
+        width: 440px;
     }
 
     .slide-text h1 {
         font-size: 40px;
     }
 
-    .slide-text h2 {
+    .slide-text span {
         font-size: 22px;
     }
 
@@ -97,15 +97,15 @@
     }
 
     .slide-text {
-        padding-top: 70px;
-        width: 90%;
+        padding-top: 90px;
+        width: 300px;
     }
 
     .slide-text h1 {
         font-size: 30px;
     }
 
-    .slide-text h2 {
+    .slide-text span {
         font-size: 18px;
     }
 

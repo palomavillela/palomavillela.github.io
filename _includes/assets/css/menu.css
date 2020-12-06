@@ -8,7 +8,7 @@
     background-color: #fff;
     z-index: 1000;
     box-shadow: 0 0 16px rgb(0, 0, 0, 0.3);
-    font-family: 'Vollkorn', serif;
+    font-family: 'Lato', sans-serif;
 }
 
 .menu .desktop {
@@ -23,7 +23,7 @@
     margin-top: 18px;
     line-height: 16px;
     font-size: 15px;
-    font-family: Vollkorn;
+    font-family: Lato;
 }
 
 .menu .logo-big {
@@ -119,11 +119,11 @@
     .menu .logo-text {
         margin-top: 13px;
         line-height: 16px;
-        font-size: 9px;
+        font-size: 13px;
     }
 
     .menu .logo-big {
-        font-size: 23px;
+        font-size: 26px;
     }
 
     .menu .pure-menu-link {
@@ -140,14 +140,6 @@
 
     #menu-spacer {
         margin-bottom: 72px;
-    }
-
-    .menu hr {
-        border: 0.5px solid #eee;
-    }
-
-    .menu .pure-menu-children {
-        border-top: 2px solid #eee;
     }
 
 }

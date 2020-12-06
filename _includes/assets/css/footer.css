@@ -33,21 +33,23 @@ footer li {
 }
 
 footer .copyright-notice {
-    font-size: 13.7px;
+    font-size: 10px;
+    letter-spacing: -0.3px;
     float: right;
     margin-right: 16px;
     color: rgb(255, 255, 255, 0.7);
 }
 
 footer .logo-text {
-    margin-top: 60px;
+    margin-top: 20px;
     line-height: 16px;
-    font-size: 18px;
+    font-size: 15px;
     float: right;
 }
 
 footer .logo-big {
-    font-size: 24px;
+    font-size: 30px;
+    letter-spacing: 7px;
     font-weight: bold;
 }
 
@@ -73,10 +75,6 @@ footer .logo-big {
 
     footer a {
         font-size: 16px;
-    }
-
-    footer .logo-text {
-        margin-top: 54px;
     }
 
 }

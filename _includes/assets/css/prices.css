@@ -1,21 +1,26 @@
 /*** Style for desktop ********************************************************/
 
-.ashtanga-etiquette.centered-container {
+.prices.centered-container {
     width: 1040px;
 }
 
-.ashtanga-etiquette table {
+.prices table {
     margin: 72px 0 48px 0;
     width: 100%;
-    line-height: 24px;
+    line-height: 46px;
 }
 
-.ashtanga-etiquette.centered-container.buttons {
-    width: 200px !important;
+.prices.centered-container.buttons {
+    width: 420px !important;
     margin-bottom: 64px;
 }
 
-#welcome-block.ashtanga-etiquette {
+.prices.note {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+#welcome-block.prices {
     padding: 90px 0 100px 0;
 }
 
@@ -24,7 +29,7 @@
 
 @media screen and (max-width: 1151.9px) {
 
-    #welcome-block.ashtanga-etiquette {
+    #welcome-block.prices {
         padding: 70px 0 70px 0;
     }
 
@@ -35,20 +40,20 @@
 
 @media screen and (max-width: 1140px) and (min-width: 720px) {
 
-    .ashtanga-etiquette.centered-container {
+    .prices.centered-container {
         width: 90% !important;
     }
 
-    .ashtanga-etiquette table {
+    .prices table {
         margin: 68px 0 40px 0;
     }
 
-    #welcome-block.ashtanga-etiquette {
+    #welcome-block.prices {
         padding: 64px 0 64px 0;
     }
 
-    .ashtanga-etiquette.centered-container.buttons {
-        width: 180px !important;
+    .prices.centered-container.buttons {
+        width: 390px !important;
         margin-bottom: 58px;
     }
 
@@ -59,20 +64,20 @@
 
 @media screen and (max-width: 719px) {
 
-    .ashtanga-etiquette.centered-container {
+    .prices.centered-container {
         width: 90% !important;
     }
 
-    .ashtanga-etiquette table {
+    .prices table {
         margin: 62px 0 32px 0;
     }
 
-    #welcome-block.ashtanga-etiquette {
+    #welcome-block.prices {
         padding: 60px 0 60px 0;
     }
 
-    .ashtanga-etiquette.centered-container.buttons {
-        width: 130px !important;
+    .prices.centered-container.buttons {
+        width: 285px !important;
         margin-bottom: 48px;
     }
 

@@ -1,26 +1,21 @@
 /*** Style for desktop ********************************************************/
 
-.ashtanga-prices.centered-container {
+.etiquette.centered-container {
     width: 1040px;
 }
 
-.ashtanga-prices table {
+.etiquette table {
     margin: 72px 0 48px 0;
     width: 100%;
-    line-height: 46px;
+    line-height: 24px;
 }
 
-.ashtanga-prices.centered-container.buttons {
-    width: 420px !important;
+.etiquette.centered-container.buttons {
+    width: 200px !important;
     margin-bottom: 64px;
 }
 
-.ashtanga-prices.note {
-    text-align: center;
-    margin-bottom: 48px;
-}
-
-#welcome-block.ashtanga-prices {
+#welcome-block.etiquette {
     padding: 90px 0 100px 0;
 }
 
@@ -29,7 +24,7 @@
 
 @media screen and (max-width: 1151.9px) {
 
-    #welcome-block.ashtanga-prices {
+    #welcome-block.etiquette {
         padding: 70px 0 70px 0;
     }
 
@@ -40,20 +35,20 @@
 
 @media screen and (max-width: 1140px) and (min-width: 720px) {
 
-    .ashtanga-prices.centered-container {
+    .etiquette.centered-container {
         width: 90% !important;
     }
 
-    .ashtanga-prices table {
+    .etiquette table {
         margin: 68px 0 40px 0;
     }
 
-    #welcome-block.ashtanga-prices {
+    #welcome-block.etiquette {
         padding: 64px 0 64px 0;
     }
 
-    .ashtanga-prices.centered-container.buttons {
-        width: 390px !important;
+    .etiquette.centered-container.buttons {
+        width: 180px !important;
         margin-bottom: 58px;
     }
 
@@ -64,20 +59,20 @@
 
 @media screen and (max-width: 719px) {
 
-    .ashtanga-prices.centered-container {
+    .etiquette.centered-container {
         width: 90% !important;
     }
 
-    .ashtanga-prices table {
+    .etiquette table {
         margin: 62px 0 32px 0;
     }
 
-    #welcome-block.ashtanga-prices {
+    #welcome-block.etiquette {
         padding: 60px 0 60px 0;
     }
 
-    .ashtanga-prices.centered-container.buttons {
-        width: 285px !important;
+    .etiquette.centered-container.buttons {
+        width: 130px !important;
         margin-bottom: 48px;
     }
 
