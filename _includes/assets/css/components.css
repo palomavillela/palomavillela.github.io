@@ -102,6 +102,24 @@
     color: #666;
 }
 
+.links.centered-container.buttons {
+    width: 150px !important;
+    margin-bottom: 48px;
+}
+
+.links.centered-container.pure-g {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.links .pure-table {
+    width: 100%
+}
+
+.links td {
+    padding: 16px;
+}
+
 
 /*** When purecss grid blocks change layout at MD *****************************/
 
@@ -145,6 +163,15 @@
 
     .colored-block-button {
         font-size: 16px;
+    }
+
+    .links.centered-container.pure-g {
+        width: 1040px;
+    }
+
+    .links.centered-container.buttons {
+        width: 120px !important;
+        margin-bottom: 24px;
     }
 
 }
@@ -221,6 +248,10 @@
         padding: 48px 0 16px 0;
     }
 
+    .links.centered-container.pure-g {
+        width: 95%;
+    }
+
 }
 
 
@@ -262,6 +293,10 @@
     .text-over-image-block.reverse {
         background-position: top right;
         background-size: auto 65%;
+    }
+
+    .links.centered-container.pure-g {
+        width: 95%;
     }
 
 }
