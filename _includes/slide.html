@@ -2,6 +2,6 @@
     <div class="slide-text">
         <h1>{{ include.text_title }}</h1>
         <span>{{ include.text_subtitle }}</span>
-        <a class="pure-button" href="{{ include.link }}" style="{% if include.text_button == null %}display:none;{% endif %}">{{ include.text_button }}</a>
+        <a class="pure-button" target="{{ include.target }}" href="{{ include.link }}" style="{% if include.text_button == null %}display:none;{% endif %}">{{ include.text_button }}</a>
     </div>
 </div>

@@ -22,10 +22,9 @@ p, .pure-g [class *= "pure-u"] {
 {% include /assets/css/about_yoga.css %}
 {% include /assets/css/about_paloma.css %}
 {% include /assets/css/online.css %}
+{% include /assets/css/in_person.css %}
 {% include /assets/css/timetable.css %}
-{% include /assets/css/location.css %}
 {% include /assets/css/prices.css %}
-{% include /assets/css/etiquette.css %}
 {% include /assets/css/contact.css %}
 {% include /assets/css/events.css %}
 {% include /assets/css/events_lu2020.css %}
