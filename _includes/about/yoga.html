@@ -1,0 +1,51 @@
+{%
+    include /caption.html
+
+    caption = include.text_caption
+    caption_image = "/assets/images/lotus_drawing.jpg"
+%}
+<div id="welcome-block" class="wide-container about-yoga">
+    <div class="centered-container pure-g">
+        <div class="pure-u-1">
+            <h2>{{ include.text_welcome }}</h2>
+        </div>
+    </div>
+</div>
+<div class="text-over-image-block wide-container about-yoga no-buttons" style="background-image:url('/assets/images/trini.jpg')">
+    <div class="wide-container">
+        <div class="centered-container pure-g">
+            <div class="pure-u-1 pure-u-md-1-2"></div>
+            <div class="pure-u-1 pure-u-md-1-2">
+                <p>{{ include.text_area_1 }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="two-column-colored-block wide-container about-yoga">
+    <div class="centered-container pure-g">
+        <div class="pure-1 pure-u-sm-1-2">
+            <p>{{ include.text_area_2 }}</p>
+        </div>
+        <div class="pure-1 pure-u-sm-1-2">
+            <p>{{ include.text_area_3 }}</p>
+        </div>
+    </div>
+</div>
+<div class="text-over-image-block reverse wide-container about-yoga" style="background-image:url('/assets/images/garbha_pindasana_2.jpg')">
+    <div class="wide-container">
+        <div class="centered-container pure-g">
+            <div class="pure-u-1 pure-u-md-1-2">
+                <p>{{ include.text_area_4 }}</p>
+                <div class="buttons">
+                    <a class="pure-button clear-block-button" href="/{{ include.language }}/about/paloma.html">
+                        {{ include.text_our_teacher }}
+                    </a>
+                    <a class="pure-button clear-block-button" href="/{{ include.language }}">
+                        {{ include.text_back_home }}
+                    </a>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-1-2"></div>
+        </div>
+    </div>
+</div>

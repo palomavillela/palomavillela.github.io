@@ -1,0 +1,56 @@
+{%
+    include /caption.html
+
+    caption = include.text_caption
+    caption_image = "/assets/images/pattern.jpg"
+%}
+<div id="welcome-block" class="wide-container etiquette">
+    <div class="centered-container pure-g">
+        <div class="pure-u-1">
+            <h2>{{ include.text_welcome }}</h2>
+        </div>
+    </div>
+</div>
+<div class="wide-container">
+    <div class="centered-container pure-g etiquette">
+        <div class="pure-u-1">
+            <table class="pure-table pure-table-bordered">
+                <tbody>
+                    <tr class="pure-table-odd"><td>
+                        {{ include.text_sharath_yoga_centre }}<br>
+                        <a href="https://sharathyogacentre.com/" target="_blank">sharathyogacentre.com</a>
+                    </td></tr>
+                    <tr><td>
+                        {{ include.text_meadowlark_yoga }}<br>
+                        <a href="https://www.meadowlarkyoga.com/" target="_blank">meadowlarkyoga.com</a>
+                    </td></tr>
+                    <tr class="pure-table-odd"><td>
+                        {{ include.text_ashtanga_yoga_eindhoven }}<br>
+                        <a href="http://ashtangayogaeindhoven.nl/" target="_blank">ashtangayogaeindhoven.nl</a>
+                    </td></tr>
+                    <tr><td>
+                        {{ include.text_david_garrigues }}<br>
+                        <a href="https://davidgarrigues.com/" target="_blank">davidgarrigues.com</a>
+                    </td></tr>
+                    <tr class="pure-table-odd"><td>
+                        {{ include.text_lucia_andrade_instagram }}<br>
+                        <a href="https://www.instagram.com/santa_ashtanga_ibiza/" target="_blank">instagram.com/santa_ashtanga_ibiza</a>
+                    </td></tr>
+                    <tr class="pure-table-odd"><td>
+                        {{ include.text_emilia_arenas_instagram }}<br>
+                        <a href="https://www.instagram.com/emilia_ashtangayoga/" target="_blank">instagram.com/emilia_ashtangayoga/</a>
+                    </td></tr>
+                    <tr class="pure-table-odd"><td>
+                        {{ include.text_essencia_pilates }}<br>
+                        <a href="https://www.essenciapilatesmallorca.com/" target="_blank">essenciapilatesmallorca.com</a>
+                    </td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="centered-container buttons etiquette">
+        <a class="pure-button clear-block-button" href="/{{ include.language }}">
+            {{ include.text_back_home }}
+        </a>
+    </div>
+</div>

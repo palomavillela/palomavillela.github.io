@@ -1,0 +1,112 @@
+{%
+    include /caption.html
+
+    caption = include.text_caption
+    caption_image = "/assets/images/lakshmi.jpg"
+%}
+<div id="welcome-block" class="wide-container prices">
+    <div class="centered-container pure-g">
+        <div class="pure-u-1">
+            <h2>{{ include.text_welcome }}</h2>
+        </div>
+    </div>
+</div>
+<div class="wide-container">
+    <div class="centered-container pure-g prices">
+        <div class="pure-u-1">
+            <table class="pure-table pure-table-bordered">
+                <thead><tr><td colspan=2>{{ include.text_online_group_classes }}</td></tr></thead>
+                <tbody>
+                    <tr class="unavailable">
+                        <td>{{ include.text_online_group_classes_type_1 }}</td>
+                        <td class="numeric">{{ include.text_online_group_classes_price_1 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_online_group_classes_type_2 }}</td>
+                        <td class="numeric">{{ include.text_online_group_classes_price_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_online_group_classes_type_3 }}</td>
+                        <td class="numeric">{{ include.text_online_group_classes_price_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_online_group_classes_type_4 }}</td>
+                        <td class="numeric">{{ include.text_online_group_classes_price_4 }}</td>
+                    </tr>
+                    <tr class="note-row"><td colspan=2>{{ include.text_online_group_classes_note }}</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pure-u-1">
+            <table class="pure-table pure-table-bordered">
+                <thead><tr><td colspan=2>{{ include.text_online_private_classes }}</td></tr></thead>
+                <tbody>
+                    <tr class="unavailable">
+                        <td>{{ include.text_online_private_classes_type_1 }}</td>
+                        <td class="numeric">{{ include.text_online_private_classes_price_1 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_online_private_classes_type_2 }}</td>
+                        <td class="numeric">{{ include.text_online_private_classes_price_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_online_private_classes_type_3 }}</td>
+                        <td class="numeric">{{ include.text_online_private_classes_price_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_online_private_classes_type_4 }}</td>
+                        <td class="numeric">{{ include.text_online_private_classes_price_4 }}</td>
+                    </tr>
+                    <tr class="note-row"><td colspan=2>{{ include.text_online_private_classes_note }}</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pure-u-1">
+            <table class="pure-table pure-table-bordered">
+                <thead><tr><td colspan=2>{{ include.text_in_person_group_classes }}</td></tr></thead>
+                <tbody>
+                    <tr class="unavailable">
+                        <td>{{ include.text_in_person_group_classes_type_1 }}</td>
+                        <td class="numeric">{{ include.text_in_person_group_classes_price_1 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_in_person_group_classes_type_2 }}</td>
+                        <td class="numeric">{{ include.text_in_person_group_classes_price_2 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_in_person_group_classes_type_3 }}</td>
+                        <td class="numeric">{{ include.text_in_person_group_classes_price_3 }}</td>
+                    </tr>
+                    <tr>
+                        <td>{{ include.text_in_person_group_classes_type_4 }}</td>
+                        <td class="numeric">{{ include.text_in_person_group_classes_price_4 }}</td>
+                    </tr>
+                    <tr class="note-row"><td colspan=2>{{ include.text_in_person_group_classes_note }}</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="pure-u-1">
+            <table class="pure-table pure-table-bordered">
+                <thead><tr><td colspan=2>{{ include.text_in_person_kids_classes }}</td></tr></thead>
+                <tbody>
+                    <tr>
+                        <td>{{ include.text_in_person_kids_classes_type_1 }}</td>
+                        <td class="numeric">{{ include.text_in_person_kids_classes_price_1 }}</td>
+                    </tr>
+                    <tr class="note-row"><td colspan=2>{{ include.text_in_person_kids_classes_note }}</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="centered-container prices note">
+        {{ include.text_note }}
+    </div>
+    <div class="centered-container buttons prices">
+        <a class="pure-button clear-block-button" href="/{{ include.language }}/classes/timetable.html">
+            {{ include.text_timetable }}
+        </a>
+        <a class="pure-button clear-block-button" href="/{{ include.language }}/contact.html">
+            {{ include.text_contact }}
+        </a>
+    </div>
+</div>
