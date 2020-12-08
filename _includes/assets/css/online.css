@@ -1,0 +1,130 @@
+
+/*** Style for desktop ********************************************************/
+
+.text-over-image-block.online {
+    background-position: center left;
+    background-size: 50% auto;
+}
+
+.text-over-image-block.reverse.online {
+    background-position: top right;
+    background-size: 50% auto;
+}
+
+.text-over-image-block.reverse.online .wide-container {
+    background-image: linear-gradient(
+        to left,
+        rgba(255, 255, 255, 0),
+        rgba(255, 255, 255, 0),
+        #fff,
+        #fff,
+        #fff);
+}
+
+.two-column-colored-block.wide-container.online {
+    padding: 64px 0 64px 0;
+}
+
+
+/*** When welcome block changes spacing ***************************************/
+
+@media screen and (max-width: 1151.9px) {
+
+    #welcome-block.online {
+        padding: 70px 0 70px 0;
+    }
+
+    .text-over-image-block.online {
+        background-position: center left;
+        background-size: 60% auto;
+    }
+
+    .text-over-image-block.reverse.online {
+        background-position: top right;
+        background-size: 55% auto;
+    }
+
+}
+
+/*** When Sharath image should become auto ************************************/
+
+@media screen and (max-width: 1320px) and (min-width: 864px) {
+}
+
+
+/*** When purecss grid blocks change layout at MD *****************************/
+
+@media screen and (max-width: 863.9px) and (min-width: 600px) {
+
+    .text-over-image-block.online {
+        background-position: top right;
+        background-size: 120% auto;
+    }
+
+    .text-over-image-block.reverse.online {
+        background-position: top center;
+        background-size: 120% auto;
+    }
+
+    .text-over-image-block.online.no-buttons p {
+        margin-bottom: 32px;
+    }
+
+    .text-over-image-block.online .wide-container {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            #fff,
+            #fff);
+        padding: 0 0 16px 0;
+    }
+
+    .text-over-image-block.reverse.online .wide-container {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            #fff,
+            #fff);
+        padding: 0 0 16px 0;
+    }
+
+}
+
+
+/*** When purecss grid blocks change layout at SM *****************************/
+
+@media screen and (max-width: 599.9px) {
+
+    .text-over-image-block.online {
+        background-position: top center;
+        background-size: auto 70%;
+    }
+
+    .text-over-image-block.reverse.online {
+        background-position: top center;
+        background-size: 130% auto;
+    }
+
+    .text-over-image-block.online .wide-container {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            #fff,
+            #fff);
+        padding: 0 0 16px 0;
+    }
+
+    .text-over-image-block.reverse.online .wide-container {
+        background-image: linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0),
+            rgba(255, 255, 255, 0),
+            #fff,
+            #fff);
+        padding: 0 0 16px 0;
+    }
+
+}

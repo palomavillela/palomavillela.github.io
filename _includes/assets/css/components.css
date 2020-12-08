@@ -63,6 +63,10 @@
     margin: 4px 8px 0 0;
 }
 
+.special-button {
+    background: #7c8;
+}
+
 .clear-block-button:hover {
     background: #999;
 }
