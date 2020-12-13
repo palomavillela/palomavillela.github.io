@@ -1,2 +1,5 @@
-name: Yoga PadmaWorld
+title: Yoga PadmaWorld
 timezone: UTC
+url: "http://yoga.padmaworld.com"
+plugins:
+  - jekyll-sitemap
